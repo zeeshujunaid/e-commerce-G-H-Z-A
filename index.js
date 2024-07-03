@@ -1,19 +1,16 @@
 //                       IMAGE GALLERY JAVASCRIPT CODE STARTS 
 const imageElements = document.querySelectorAll(".right-side-img-div img");
 const imageSources = [
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXp5as4bBqRRliY74k2Z5Ep4h6eDGuWy0wDw&s",
-    "https://cdn.hockeycanada.ca/hockey-canada/Team-Canada/Men/World-Cup/2016/sep_29_wch_team.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLWqKQ7d5_IoYj1Ltq8qA1CJ63Hr6fQAaC1Q&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Mf7NBuQi7Jnl-5a3GpK9xnhjDyB6VOrLTQ&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLoRTFBm7EFOXgKGMVpmEqySW2lpAdSiMrqg&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNxuDiRs8H2pa6KDAxDHawAcrS35yDkGcuA&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlOUGAx1ahdS0S_GPcaj0L9fuDQlrbO-CTdw&s",
+    "https://img.dunyanews.tv/news/2023/November/11-20-23/news_big_images/771598_84072011.jpg",
+    "https://c.cricketpakistan.com.pk/images/posts/cover_1592459796cover.jpg",
+    "https://static01.nyt.com/images/2019/12/19/multimedia/19SP-MOMENTS-INYT-RUGBY/merlin_163768305_14e60b2d-807d-4e4c-9dac-dd672c89c8f7-superJumbo.jpg",
     "https://www.mykhel.com/common_dynamic/images/common/desk/football_history/2022.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9ym9ksDVBPVcxQMtR7M4Nc_tTL_L90P91kg&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0_f8x0icAdzPSDmUG3w77Vv9NC0BEG-Kwhg&s",
+    "https://images.wsj.net/im-957541/social",
+    "https://wtop.com/wp-content/uploads/2017/12/Tottenham.jpg",
     "https://i1.adis.ws/i/canon/canon-pro-tom-jenkins-sports-tips-1-1140?$og-image$",
-    "https://www.pledgesports.org/wp-content/uploads/2017/03/nba_jordan_08.jpg",
-    "https://cloudfront-us-east-2.images.arcpublishing.com/reuters/X4F64T6ZCRLPRLGNGFUTOKW5O4.jpg",
-    "https://photographylife.com/wp-content/uploads/2018/05/sports_tips_1.jpg",
-    "https://www.arabnews.pk/sites/default/files/styles/n_670_395/public/main-image/2019/07/05/1653551-209234056.png?itok=vcJ_GqGL",
+    "https://api.time.com/wp-content/uploads/2017/02/world-press-photo-102_cameron-spencer_getty-images.jpg",
 ];
 
 let currentIndexes = Array.from({ length: imageElements.length }, () => Math.floor(Math.random() * imageSources.length));
@@ -33,4 +30,18 @@ const updateContent = () => {
 setInterval(updateContent, 5000);
 //                           IMAGE GALLERY JAVASCRIPT CODE ENDS
 
+//                             scroll animation code starts
+let lastScrollTop = 0;
 
+window.addEventListener('scroll', function() {
+    var imageDiv = document.querySelector('.right-side-img-div');
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        imageDiv.classList.add('covered');
+    } else {
+        imageDiv.classList.remove('covered');
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+});
+//                             scroll animation code ends
