@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPORTS HUB</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="shortcut icon" href="./pics/sportshublogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <!--                              NAVBAR CODE STARTS                         -->
+    <!--                              NAVBAR CODE STARTS                          -->
     <div class="navbar-main-div">
         <div class="left-side-nav-div">
             <img src="./pics/sportshublogo.png">
@@ -22,33 +26,34 @@
             </a>
             <h4>
                 <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      CATEGORY
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        CATEGORY
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="basket.ball.html">basketball items</a></li>
-                      <li><a class="dropdown-item" href="cricket.items.html">cricket items</a></li>
-                      <li><a class="dropdown-item" href="football.items.html">football items</a></li>
-                      <li><a class="dropdown-item" href="hockey.items.html">hockey items</a></li>
-                      <li><a class="dropdown-item" href="tennis.items.html">tennis items</a></li>
-                      <li><a class="dropdown-item" href="sports.shoes.html">sports shoes</a></li>
+                        <li><a class="dropdown-item" href="basket.ball.html">basketball items</a></li>
+                        <li><a class="dropdown-item" href="cricket.items.html">cricket items</a></li>
+                        <li><a class="dropdown-item" href="football.items.html">football items</a></li>
+                        <li><a class="dropdown-item" href="hockey.items.html">hockey items</a></li>
+                        <li><a class="dropdown-item" href="tennis.items.html">tennis items</a></li>
+                        <li><a class="dropdown-item" href="sports.shoes.html">sports shoes</a></li>
                     </ul>
-                  </div>
+                </div>
             </h4>
             <h4>POST ADD</h4>
             <h4>SEE YOUR ADD</h4>
             <h4>PROFILE</h4>
         </div>
     </div>
-    <!--                              NAVBAR CODE ENDS                        -->
-    <!--                          IMAGE GALLERY CODE STARTS                         -->
+    <!--                              NAVBAR CODE ENDS                            -->
+    <!--                          IMAGE GALLERY CODE STARTS                       -->
 
     <div class="right-side-img-div">
         <div class="image-overlay">
             <h1>WELCOME TO SPORTS HUB</h1>
         </div>
         <div class="righ-side-img-div-row">
-            <img src="./pics/ausworldcup.jfif" data-aos="zoom-in">
+            <img src="https://media.tenor.com/jQ-kmLDONlcAAAAM/soccer-goal.gif" data-aos="zoom-in">
             <img src="./pics/basketball.jpg" data-aos="zoom-in">
             <img src="./pics/footpose.jfif" data-aos="zoom-in">
             <img src="./pics/icehockey.jpg" data-aos="zoom-in">
@@ -63,21 +68,262 @@
         </div>
     </div>
     <!--                          IMAGE GALLERY CODE ENDS                         -->
-    
-<!-- <div style="height: 180vh;background-color: aqua;">
-    <h1>4</h1>
-    <h1>4</h1>
-    <h1>4</h1>
-    <h1>4</h1>
-    <h1>h</h1>
-    <h1>h</h1>
-</div>     -->
+    <!--                        TRENDING ITEMS SLIDER CODE                        -->
+    <div class="trending-slider-main-cointainer">
+<div style="display: flex;flex-direction: row;;width: 100%;">
+            <section class="image-slider-container">
+                <div class="image-slider-heading">
+        <h2 class="image-slider-title">
+                        TRENDING ITEMS
+                    </h2>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper" data-aos="zoom-in" >
+                    <div class="swiper-wrapper" >
+                        <div class="swiper-slide">
+                            <div class="slide-con" data-aos="zoom-in">
+                                <img src="https://www.mrfsports.com/sites/default/files/styles/homepage_bat_listing/public/kasmir-willow-listing_0.png?itok=LyLUYcuD" alt="" data-aos="zoom-in">
+                                <div class="slide-details">
+                                    <div class="movie-info">
+                                        <h2 class="movie-name" title="">
+                                            GENTS SPORTS SHOES
+                                        </h2>
+                                    </div>
+                                    <div class="movie-btns">
+                                        <a href="#" class="imdb-rate" title="">
+                                            SEE MORE
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-con"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJOYQ1vp0G2uJ0ka9mS0Ty886DX5S1JvJjBp8q7Q-1Fre78L8ZgdBn6rudUrpn1Bxjb50&usqp=CAU" alt="">
+                                <div class="slide-details">
+                                    <div class="movie-info">
+                                        <h2 class="movie-name" title="">
+                                            BASKET BALL
+                                        </h2>
+                                    </div>
+                                    <div class="movie-btns">
+                                        <a href="#" class="imdb-rate" title="">
+                                            SEE MORE
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-con"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX1l5xtInx_hILCq1qsn30LVVghutiNf-0tCRnv9L5X4dM4jgK21w6d-UTAzOjQmKSC0s&usqp=CAU" alt="">
+                                <div class="slide-details">
+                                    <div class="movie-info">
+                                        <h2 class="movie-name" title="">
+                                            TENNIS ITEMS
+                                        </h2>
+                                    </div>
+                                    <div class="movie-btns">
+                                        <a href="#" class="imdb-rate" title="">
+                                            SEE MORE
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-con">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9ew-0ypyxbLTUdPPsPSiMgn_jUp05fjc_bw&s" alt="">
+                                <div class="slide-details">
+                                    <div class="movie-info">
+                                        <h2 class="movie-name" title="">
+                                            HOCKEY STICKS
+                                        </h2>
+                                    </div>
+                                    <div class="movie-btns">
+                                        <a href="#" class="imdb-rate" title="">
+                                            SEE MORE
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-con">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUb3jMqNaG5dLetOnxRh8mR2oEz5tUreAlBQ&s" alt="">
+                                <div class="slide-details">
+                                    <div class="movie-info">
+                                        <h2 class="movie-name" title="">
+                                            GENTS SHOES
+                                        </h2>
+                                    </div>
+                                    <div class="movie-btns">
+                                        <a href="#" class="imdb-rate" title="">
+                                            SEE MORE
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-con">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRou2OiEkjargTJ3Wr6FT2INGd8h4DUmtr82w&s" alt="">
+                                <div class="slide-details">
+                                    <div class="movie-info">
+                                        <h2 class="movie-name" title="">
+                                            FOOTBALL
+                                        </h2>
+                                    </div>
+                                    <div class="movie-btns">
+                                        <a href="#" class="imdb-rate" title="">
+                                            SEE MORE
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-con">
+                                <img src="./pics/shoespics/shoespic2.jfif" alt="">
+                                <div class="slide-details">
+                                    <div class="movie-info">
+                                        <h2 class="movie-name" title="">
+                                            GENTS SHOES
+                                        </h2>
+                                    </div>
+                                    <div class="movie-btns">
+                                        <a href="#" class="imdb-rate" title="">
+                                            SEE MORE
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-con">
+                                <img src="./pics/shoespics/shoespic3.jfif" alt="">
+                                <div class="slide-details">
+                                    <div class="movie-info">
+                                        <h2 class="movie-name" title="">
+                                            GENTS SHOES
+                                        </h2>
+                                    </div>
+                                    <div class="movie-btns">
+                                        <a href="#" class="imdb-rate" title="">
+                                            SEE MORE
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-con">
+                                <img src="./pics/shoespics/shoespic3.jfif" alt="">
+                                <div class="slide-details">
+                                    <div class="movie-info">
+                                        <h2 class="movie-name" title="">
+                                            GENTS SHOES
+                                        </h2>
+                                    </div>
+                                    <div class="movie-btns">
+                                        <a href="#" class="imdb-rate" title="">
+                                            SEE MORE
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-con">
+                                <img src="./pics/shoespics/shoespic3.jfif" alt="">
+                                <div class="slide-details">
+                                    <div class="movie-info">
+                                        <h2 class="movie-name" title="">
+                                            GENTS SHOES
+                                        </h2>
+                                    </div>
+                                    <div class="movie-btns">
+                                        <a href="#" class="imdb-rate" title="">
+                                            SEE MORE
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-con">
+                                <img src="https://wallpapers.com/images/featured/football-fc6ou33pmae5hruc.jpg" alt="">
+                                <div class="slide-details">
+                                    <div class="movie-info">
+                                        <h2 class="movie-name" title="">
+                                            GENTS SHOES
+                                        </h2>
+                                    </div>
+                                    <div class="movie-btns">
+                                        <a href="#" class="imdb-rate" title="">
+                                            SEE MORE
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
 
 
-
+    </div>
+    <!--                     TRENDING ITEMS SLIDER CODE ENDS                      -->
 
     <script src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        new Swiper(".swiper", {
+            loop: true,
+            effect: 'coverflow',
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            speed: 500,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+
+            },
+
+            breakpoints: {
+                768: {
+                    centeredSlides: false,
+                    coverflowEffect: {
+
+                        depth: 0,
+
+                        rotate: 0,
+
+                        stretch: -10,
+
+
+
+                    }
+                }
+            },
+            autoplay: {
+                delay: 3000,
+            },
+            coverflowEffect: {
+                depth: 80,
+                rotate: 50,
+                stretch: 20,
+
+            }
+        })
+    </script>
 </body>
 
 </html>
