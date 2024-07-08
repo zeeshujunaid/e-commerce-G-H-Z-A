@@ -11,6 +11,11 @@ const imageSources = [
     "https://wtop.com/wp-content/uploads/2017/12/Tottenham.jpg",
     "https://i1.adis.ws/i/canon/canon-pro-tom-jenkins-sports-tips-1-1140?$og-image$",
     "https://api.time.com/wp-content/uploads/2017/02/world-press-photo-102_cameron-spencer_getty-images.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIsyV_jJX9OojWQbvJEGV3ft7GAgSTGUQMpg&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaJ9Geex6WbgHoYJYD1ATcmtcUcw3vjMNieg&s",
+    "https://www.sportinglife.com/images/news/945x532/37ffcf37-2e63-4bb9-9881-9430be4e87c9.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9FWnq3IKZXRl4YorfNvLKZckmPn6l432VVgWpgvSV6qAbX9GbXJeeOOTaPf97R0eiOW8&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ddzGGgqP5A77NI2Wm4FskhqyYMnm0Vjmxx05Dy5X40_xDrxT6u_mEhjv9qBtcXgS1CE&usqp=CAU",
 ];
 
 let currentIndexes = Array.from({ length: imageElements.length }, () => Math.floor(Math.random() * imageSources.length));
@@ -23,7 +28,7 @@ const updateContent = () => {
             currentIndexes[index] = (currentIndexes[index] + 1) % imageSources.length;
             imageElement.src = imageSources[currentIndexes[index]];
             imageElement.classList.remove('hidden');
-        }, 1000); // Match this with the CSS transition duration
+        }, 1000);
     });
 };
 

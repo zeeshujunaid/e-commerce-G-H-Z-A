@@ -37,7 +37,7 @@ body{
 }
 .left-side-nav-div img{
     height:17vh;
-    width: 60%;
+    width: 100%;
 }
 .right-side-nav-div{
     display: flex;
@@ -76,25 +76,21 @@ body{
   width: 100%;
   position: relative;
   overflow: hidden; 
-  background-color: black;
+  /* background-color: black; */
  
 }
 .right-side-img-div img{
   transition: transform 0.3s ease-in-out;
-  padding-left: 1rem;
+  padding-left: 2vw;
   padding-top: 1rem;
   height: 40vh;
-  width: 19.5%;
+  width: 19.7%;
 }
-/* Add this CSS to style.css */
-
-/* Add this CSS to style.css */
-
-/* Add this CSS to style.css */
 
  .right-side-img-div-row { 
   display: flex;
   justify-content: space-between; 
+  padding-left: 6vw;
  }
 
 .image-overlay {
@@ -110,7 +106,7 @@ body{
   align-items: center;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-  z-index: 1; /* Ensure overlay is above images */
+  z-index: 1;
 }
 
 .image-overlay h1 {
@@ -327,7 +323,7 @@ body{
 .image-slider-container .swiper .swiper-slide img {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.6);
 }
 /*                     trending scrooling image css code ends         */
@@ -340,6 +336,55 @@ body{
 .shoes-add-main-div img{
   width:100%;
   height:100%;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.cards .red {
+  background-color: #f43f5e;
+}
+
+.cards .blue {
+  background-color: #3b82f6;
+}
+
+.cards .green {
+  background-color: #22c55e;
+}
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100px;
+  width: 250px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards .card p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cards .card p.second-text {
+  font-size: .7em;
+}
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
 }
 /*                             shoes adds code ends                   */
 
