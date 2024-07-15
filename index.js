@@ -1,21 +1,21 @@
 //                       IMAGE GALLERY JAVASCRIPT CODE STARTS 
 const imageElements = document.querySelectorAll(".right-side-img-div img");
 const imageSources = [
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNxuDiRs8H2pa6KDAxDHawAcrS35yDkGcuA&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlOUGAx1ahdS0S_GPcaj0L9fuDQlrbO-CTdw&s",
-    "https://img.dunyanews.tv/news/2023/November/11-20-23/news_big_images/771598_84072011.jpg",
-    "https://c.cricketpakistan.com.pk/images/posts/cover_1592459796cover.jpg",
-    "https://static01.nyt.com/images/2019/12/19/multimedia/19SP-MOMENTS-INYT-RUGBY/merlin_163768305_14e60b2d-807d-4e4c-9dac-dd672c89c8f7-superJumbo.jpg",
-    "https://www.mykhel.com/common_dynamic/images/common/desk/football_history/2022.jpg",
-    "https://images.wsj.net/im-957541/social",
-    "https://wtop.com/wp-content/uploads/2017/12/Tottenham.jpg",
-    "https://i1.adis.ws/i/canon/canon-pro-tom-jenkins-sports-tips-1-1140?$og-image$",
-    "https://api.time.com/wp-content/uploads/2017/02/world-press-photo-102_cameron-spencer_getty-images.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIsyV_jJX9OojWQbvJEGV3ft7GAgSTGUQMpg&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaJ9Geex6WbgHoYJYD1ATcmtcUcw3vjMNieg&s",
-    "https://www.sportinglife.com/images/news/945x532/37ffcf37-2e63-4bb9-9881-9430be4e87c9.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9FWnq3IKZXRl4YorfNvLKZckmPn6l432VVgWpgvSV6qAbX9GbXJeeOOTaPf97R0eiOW8&usqp=CAU",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ddzGGgqP5A77NI2Wm4FskhqyYMnm0Vjmxx05Dy5X40_xDrxT6u_mEhjv9qBtcXgS1CE&usqp=CAU",
+    "https://cdn.nba.com/manage/2024/07/bronny-iso2-071724.jpg",
+     "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/jqhiffhjy5nodl3jef7i",
+     "https://c.cricketpakistan.com.pk/images/posts/cover_1673417388Untitled-1.jpg",
+     "https://www.teetimegolfproducts.com/wp-content/uploads/2014/10/Best-top-desktop-golf-wallpapers-hd-golf-wallpaper-sport-pictures-06.jpg",
+     "https://mrwallpaper.com/images/hd/join-the-competition-and-be-the-best-in-any-sport-you-choose-to-pursue-2jnu8pkvxo3rm08d.jpg",
+     "https://mrwallpaper.com/images/hd/amazing-best-sports-basketball-ehrdni7y111loqd5.jpg",
+     "https://i.pinimg.com/236x/e2/68/39/e268394bbe2b6e5c17e58c0ee53fdaac.jpg",
+     "https://thefederal.com/h-upload/2024/05/05/444841-pti05042024000407b.webp",
+     "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2023/10/untitled-design-2023-10-10t201716-1696949241.jpg",
+     "https://www.creativefabrica.com/wp-content/uploads/2023/03/13/Nike-Logo-Sneaker-Graphic-64103759-1.png",
+     "https://shabiba.eu-central-1.linodeobjects.com/2022/08/1661683537-1661683537-5mj1obayqlus.jpg",
+     "https://s.hdnux.com/photos/25/20/53/5573323/4/ratio3x2_960.jpg",
+    // "https://www.sportinglife.com/images/news/945x532/37ffcf37-2e63-4bb9-9881-9430be4e87c9.jpg",
+    // "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9FWnq3IKZXRl4YorfNvLKZckmPn6l432VVgWpgvSV6qAbX9GbXJeeOOTaPf97R0eiOW8&usqp=CAU",
+    // "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ddzGGgqP5A77NI2Wm4FskhqyYMnm0Vjmxx05Dy5X40_xDrxT6u_mEhjv9qBtcXgS1CE&usqp=CAU",
 ];
 
 let currentIndexes = Array.from({ length: imageElements.length }, () => Math.floor(Math.random() * imageSources.length));
