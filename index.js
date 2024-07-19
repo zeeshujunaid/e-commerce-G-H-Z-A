@@ -44,19 +44,19 @@ setInterval(updateContent, 5000);
 //                           IMAGE GALLERY JAVASCRIPT CODE ENDS
 
 //                             scroll animation code starts
-let lastScrollTop = 0;
+// let lastScrollTop = 0;
 
-window.addEventListener('scroll', function() {
-    var imageDiv = document.querySelector('.right-side-img-div');
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+// window.addEventListener('scroll', function() {
+//     var imageDiv = document.querySelector('.right-side-img-div');
+//     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollTop > lastScrollTop) {
-        imageDiv.classList.add('covered');
-    } else {
-        imageDiv.classList.remove('covered');
-    }
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
-});
+//     if (scrollTop > lastScrollTop) {
+//         imageDiv.classList.add('covered');
+//     } else {
+//         imageDiv.classList.remove('covered');
+//     }
+//     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+// });
 //                             scroll animation code ends
 window.onload = function() {
     const canvas = document.getElementById('picassoCanvas');
