@@ -1,3 +1,11 @@
+//                           loading code start        
+const loader = document.getElementById("loader-main-div");
+window.addEventListener("load", function () {
+    loader.style.display = "none"
+})
+//                           loading code ends            
+
+
 //                       IMAGE GALLERY JAVASCRIPT CODE STARTS 
 const imageElements = document.querySelectorAll(".right-side-img-div img");
 const imageSources = [
@@ -28,7 +36,7 @@ const updateContent = () => {
             currentIndexes[index] = (currentIndexes[index] + 1) % imageSources.length;
             imageElement.src = imageSources[currentIndexes[index]];
             imageElement.classList.remove('hidden');
-        }, 1000);
+        }, 100);
     });
 };
 
