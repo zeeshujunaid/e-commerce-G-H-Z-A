@@ -30,64 +30,67 @@ body{
   flex-direction: row;
   align-items: center;
   height: 10vh;
-  color: #f5c545;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  /* color: white; */
+  color: #988735;
+  background-color:transparent; /* Semi-transparent background */
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2; /* Ensure navbar is above the image */
+  z-index: 2; 
+}
+nav{
+  background-color: transparent;
+  height: 50px;
+ position: fixed;
+ align-items: center;
+ width: 100%;
+}
+.img-navbar{
+  height: 22vh;
+  padding-bottom:9vh ;
+  width: 30vw;
+}
+nav ul{
+ background-color: transparent;
+
+ position: fixed;
+ text-align: center ;
+ width: 100%;
+ height: 100vh;
+ top: -100%;
+ margin-top: 20px;
+ transition: .7s;
+z-index: -1
+ 
+}
+nav ul li {
+  list-style: none;
+  color: black;
+  line-height: 50px;
+  font-size: 20px;
+  text-transform: uppercase;
+
+  
 }
 
-.left-side-nav-div {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  width: 30%;
+nav label.che{
+  float: right;
+  margin-right: 30px;
+  font-size: 50px
+}
+nav input{
+  display: none;
+}
+
+#check:checked ~ul{
+  background-color: rgba(255, 255, 255, 0.377);
+  /* border-radius: 80%; */
+  height: 48vh;
   align-items: center;
-  padding-left: 5vw;
+  object-fit: contain;
+  top: 10%;
 }
-
-.nav-bar-h4 {
-  color: yellow;
-  text-decoration: none;
-  margin: 0 1vw;
-}
-
-.left-side-nav-div img {
-  height: 80%;
-  width: auto;
-}
-
-.right-side-nav-div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-  width: 70%;
-}
-
-.dropdown {
-  border: 2px solid black;
-  background-color: black;
-}
-
-.dropdown a {
-  border: none;
-  background-color: black;
-  color: yellow;
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.dropdown a:hover {
-  background-color: black;
-  color: white;
-}
-
 /* Image Gallery Area CSS */
 
 .right-side-img-div {
@@ -149,7 +152,7 @@ body{
   display: flex;
    flex-direction: row; 
    width: 100% ;
-  background-color: black;
+  background-color: #0d1117;
   color: white;
   /* background-color: #808080; */
 }
@@ -357,7 +360,7 @@ body{
   flex-direction: column;
   height: 50vh;
   width: 100%;
-  background-color: black;
+  background-color: #0d1117;
 }
 .round-card-main-cointainer h1{
   padding-left: 5vw;
