@@ -81,8 +81,12 @@ nav input {
 }
 
 #check:checked ~ ul {
-  background-color: rgba(255, 255, 255, 0.377);
-  /* border-radius: 80%; */
+  background: rgba( 255, 255, 255, 0.15 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 9.5px );
+-webkit-backdrop-filter: blur( 9.5px );
+border-radius: 40px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
   height: 48vh;
   align-items: center;
   object-fit: contain;
@@ -106,7 +110,35 @@ nav input {
   width: 100%;
   object-fit: cover;
 }
+.typewriter  {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
 
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
 .image-overlay {
   position: absolute;
   top: 0;
@@ -148,7 +180,7 @@ nav input {
   display: flex;
   flex-direction: row;
   width: 100%;
-  background-color: #0d1117;
+  background-color: white;
   color: white;
   /* background-color: #808080; */
 }
@@ -180,8 +212,9 @@ nav input {
 }
 
 .image-slider-container .image-slider-heading h2 {
-  font-size: 27px;
-  color: yellow;
+  font-size: 37px;
+  color: black;
+  font-weight: 900;
 }
 
 .image-slider-container .image-slider-heading .swiper-pagination {
@@ -191,8 +224,7 @@ nav input {
   margin: 0;
   top: 0;
   bottom: 0;
-  color: yellow;
-  background-color: yellow;
+  color: black;
 }
 
 .image-slider-container
