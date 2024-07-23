@@ -39,7 +39,7 @@ body {
   left: 0;
   z-index: 2;
 }
-.dropdown2{
+.dropdown2 {
   /* height: 60vh; */
   display: flex;
   flex-direction: row;
@@ -48,12 +48,16 @@ body {
   border: none !important;
   object-fit: contain;
 }
-.dropdown2 li{
+.dropdown2 li {
   background-color: rgba(255, 255, 255, 0.555) !important;
   display: flex;
-  flex-direction: row ;
+  flex-direction: row;
   text-transform: uppercase;
-
+}
+.li-set-div {
+  display: flex;
+  flex-direction: row;
+  gap: 9vw;
 }
 nav {
   background-color: transparent;
@@ -96,12 +100,12 @@ nav input {
 }
 
 #check:checked ~ #ull {
-  background: rgba( 255, 255, 255, 0.15 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 9.5px );
--webkit-backdrop-filter: blur( 9.5px );
-border-radius: 40px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   height: 48vh;
   align-items: center;
   object-fit: contain;
@@ -126,7 +130,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   width: 100%;
   object-fit: cover;
 }
-.typewriter  {
+.typewriter {
   height: 20vh;
   display: flex;
   align-items: center;
@@ -135,25 +139,32 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   color: #fff;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 .image-overlay {
   position: absolute;
@@ -467,14 +478,14 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   border-radius: 20px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.6);
 }
-.treinding-item-heading{
-  display: flex; 
-  align-items: center; 
+.treinding-item-heading {
+  display: flex;
+  align-items: center;
   justify-content: center;
   width: 100%;
-  height: 20vh
+  height: 20vh;
 }
-.treinding-item-heading h1{
+.treinding-item-heading h1 {
   font-weight: 900;
 }
 /*                     trending scrooling image css code ends         */
@@ -484,7 +495,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   flex-direction: column;
   height: 50vh;
   width: 100%;
-  
+
   /* background-color: #f5f5f5; */
 }
 .round-card-main-cointainer h1 {
@@ -504,11 +515,11 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   padding-left: 12vh;
   padding-right: 14vh;
 }
-.round-card-heading-div h4{
+.round-card-heading-div h4 {
   font-size: 30px;
   font-weight: 800;
 }
-.round-card-heading-div h6{
+.round-card-heading-div h6 {
   font-size: 20px;
 }
 .round-card-row-div {
@@ -675,30 +686,136 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 .fil-shoes2 {
   fill: #333333;
 }
+/*                                             adds css                                      */
+.adds-code {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  background-color: black;
+  width: 100%;
+}
+.adds-code  marquee{display: flex;
+  flex-direction: column;
+  height: 50vh;
+  background-color: black;
+  width: 100%;
+
+}
+/*                                         adds css end  */
 /*                                     team card project */
-.card11 {
-  width: 190px;
-  height: 254px;
-  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
-  border-radius: 20px;
-  transition: all 0.3s;
+.team-card-main-div{
+  display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        align-items: center;
+        justify-content: space-around;
+          padding-top: 10vh;
+          align-items: center;
+        /* background-color: black; */
+        color: black;
+}
+.team-card-row-div{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  padding-top: 15vh;
+  width: 100%;
+  justify-content: space-around;
+}
+.card-Container-div {
+  width: 200px;
+  height: 250px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition-duration: .5s;
+  cursor: pointer;
 }
 
-.card2 {
-  width: 190px;
-  height: 254px;
-  background-color: #1a1a1a;
-  transition: all 0.2s;
+.profileDiv {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(24, 24, 24);
+  transition-duration: .5s;
+  color: rgb(155, 155, 155);
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
 }
 
-.card2:hover {
-  transform: scale(0.98);
-  border-radius: 20px;
+.card-Container-div:hover .profileDiv {
+  transform: translateX(-25%) translateY(-20%);
+  transition-duration: .5s;
 }
 
-.card11:hover {
-  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+.infoDiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  z-index: 1;
 }
+
+.nameDiv {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: aliceblue;
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  gap: 2px;
+}
+
+.name {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+.role {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(48, 48, 48);
+  margin-bottom: 5px;
+}
+
+.socialDiv {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(14, 14, 14);
+  gap: 25px;
+}
+
+.infoDiv a {
+  width: 50%;
+}
+
+.socials {
+  width: 100%;
+  fill: rgb(14, 14, 14);
+}
+/*  */
 /*                                     team card project end */
 /*                             footer css code               */
 .card {
