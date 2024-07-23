@@ -40,15 +40,20 @@ body {
   z-index: 2;
 }
 .dropdown2{
-  height: 60vh;
+  /* height: 60vh; */
   display: flex;
   flex-direction: row;
-  width: 60%;
-  background-color: #00ff75;
+  background-color: transparent !important;
+  transition: 0.7s;
+  border: none !important;
+  object-fit: contain;
 }
 .dropdown2 li{
+  background-color: rgba(255, 255, 255, 0.555) !important;
   display: flex;
   flex-direction: row ;
+  text-transform: uppercase;
+
 }
 nav {
   background-color: transparent;
