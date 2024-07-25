@@ -4,96 +4,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPORTS HUB</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./pics/sportshublogo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="categries.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="./pics/realnewlogo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
 </head>
 <body>
         <!--                                lader code start                          -->
-        <div id="loader-main-div"><h3>GOING TO BASKET BALL SECTION</h3></div>
+        <div id="loader-main-div"></div>
         <!--                                loader code ends                          -->
-     <!--                              NAVBAR CODE STARTS                          -->
-     <div class="navbar-main-div">
-        <nav class="">
-          <input type="checkbox" id="check" />
-          <label for="check" class="che">&#9778;</label>
-          <label for="digital"
-            ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH31eW-4fEWN2buCY93E5p2bQz-3rHjpSnLw&s" class="img-navbar"
-          /></label>
-          <ul id="ull">
-            <li><a href="./index.html">home</a></li>
-            <li>
-              <div class="dropdown">
-                <a
-                  class="btn btn-secondary dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  CATEGORY
-                </a>
-                <ul class="dropdown-menu dropdown2">
-                  <div class="li-set-div">
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="./allcategries/basket.ball.html"
-                        >basketball items</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="./allcategries/cricket.items.html"
-                        >cricket items</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="./allcategries/football.items.html"
-                        >football items</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="./allcategries/hockey.items.html"
-                        >hockey items</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="./allcategries/tennis.items.html"
-                        >tennis items</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="./allcategries/sports.shoes.html"
-                        >sports shoes</a
-                      >
-                    </li>
-                  </div>
-                </ul>
-              </div>
-            </li>
-            <li>POST ADD</li>
-            <li>SEE YOUR ADD</li>
-            <li>CART</li>
-            <li>PROFILE</li>
-          </ul>
-        </nav>
-      </div> 
-      <!--                              navbar code ends                            -->
-        
-        
-        
-        <script src="../index.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--                              NAVBAR CODE STARTS                          -->
+    <div class="navbar-main-div">
+      <nav class="">
+        <input type="checkbox" id="check" />
+        <label for="check" class="che">&#9778;</label>
+        <label for="digital"
+          ><img src="../pics/DDD.PNG" class="img-navbar"
+        /></label>
+        <ul id="ull">
+          <li><a href="./index.html">home</a></li>
+          <li>
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                CATEGORY
+              </a>
+              <ul class="dropdown-menu dropdown2">
+                <div class="li-set-div">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./basket.ball.html"
+                      >basketball items</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./cricket.items.html"
+                      >cricket items</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./football.items.html"
+                      >football items</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./hockey.items.html"
+                      >hockey items</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./tennis.items.html"
+                      >tennis items</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./sports.shoes.html"
+                      >sports shoes</a
+                    >
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </li>
+          <li>POST ADD</li>
+          <li>SEE YOUR ADD</li>
+          <li>CART</li>
+          <li>PROFILE</li>
+        </ul>
+      </nav>
+    </div>
+    <!--                               navbar code ends                          -->
 
+    <!--                    card area  start -->
+
+    <div style="display: flex;flex-direction: row;max-width: 100%;height: 50vh;background-color: aqua;">
+      <!-- 1 -->
+      <div class="card">
+        <div class="card-img"><div class="img"></div></div>
+        <div class="card-title">Product title</div>
+        <div class="card-subtitle">Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        <hr class="card-divider">
+        <div class="card-footer">
+            <div class="card-price"><span>$</span> 123.45</div>
+            <button class="card-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
+            </button>
+        </div>
+    </div>
+    <!-- 2 -->
+
+    </div>
+    <!--                    card area  ends -->
+
+
+        <!--                             SCRIPT TAGS                                  -->
+        <script src="../index.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script>
+          new Swiper(".swiper", {
+            loop: true,
+            effect: "coverflow",
+            centeredSlides: true,
+            slidesPerView: "auto",
+            speed: 500,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+    
+            breakpoints: {
+              768: {
+                centeredSlides: false,
+                coverflowEffect: {
+                  depth: 0,
+    
+                  rotate: 0,
+    
+                  stretch: -10,
+                },
+              },
+            },
+            autoplay: {
+              delay: 3000,
+            },
+            coverflowEffect: {
+              depth: 80,
+              rotate: 50,
+              stretch: 20,
+            },
+          });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!--                                SCRIPT TAG END                      -->
     </body>
     </html>

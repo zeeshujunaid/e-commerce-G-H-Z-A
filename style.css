@@ -69,7 +69,7 @@ nav {
 .img-navbar {
   height: 22vh;
   padding-bottom: 9vh;
-  width: 30vw;
+  max-width:100%;
 }
 nav #ull {
   background-color: transparent;
@@ -127,7 +127,7 @@ nav input {
 .right-side-img-div img {
   transition: transform 0.3s ease-in-out;
   height: 100%;
-  width: 100%;
+  max-width:100%;
   object-fit: cover;
 }
 .typewriter {
@@ -1091,8 +1091,10 @@ nav input {
   position: relative;
   z-index: 2;
 }
-
-@media (max-width: 768px) {
+/*          fotter css end  */
+/*          responsive design code start */
+@media screen and (max-width: 800px) {
+  /* fotter content start */
   .footer-content {
     flex-direction: column;
     align-items: center;
@@ -1123,70 +1125,5 @@ nav input {
     width: 100%;
     height: 100%;
   }
-}
-/*           end  */
-
-/*  */
-.card-team {
-  position: relative;
-  width: 160px;
-  height: 220px;
-  background-color: yellow;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  perspective: 1000px;
-  box-shadow: 0 0 0 5px;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.card-team img {
-  width: 100%;
-  height: 100%;
-  fill: #333;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.card-team:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-}
-
-.card__content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: yellow;
-  transform: rotateX(-90deg);
-  transform-origin: bottom;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.card-team:hover .card__content {
-  transform: rotateX(0deg);
-}
-
-.card__title {
-  margin: 0;
-  font-size: 20px;
-  color: #333;
-  font-weight: 700;
-}
-
-.card-team:hover img {
-  scale: 0;
-}
-
-.card__description {
-  margin: 10px 0 0;
-  font-size: 11px;
-  color: black;
-  line-height: 1.4;
+  /* fotter content  ends */
 }
