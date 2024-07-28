@@ -90,6 +90,11 @@
     text-transform: uppercase;
   }
   
+  nav #ull li  a{
+    color:black !important;
+
+    text-decoration:none;
+  }
   nav label.che {
     float: right;
     margin-right: 30px;

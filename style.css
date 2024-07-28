@@ -24,7 +24,7 @@ body {
 .navbar-main-div {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
   display: flex;
   flex-direction: row;
@@ -39,25 +39,34 @@ body {
   left: 0;
   z-index: 2;
 }
+.dropdown a {
+  background-color: transparent !important;
+  border: none !important;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
 .dropdown2 {
   /* height: 60vh; */
   display: flex;
   flex-direction: row;
   background-color: transparent !important;
-  transition: 0.7s;
   border: none !important;
-  object-fit: contain;
 }
 .dropdown2 li {
-  background-color: rgba(255, 255, 255, 0.555) !important;
+  flex-direction: column;
+}
+.row-div-dropdown {
   display: flex;
   flex-direction: row;
-  text-transform: uppercase;
 }
 .li-set-div {
+  color: white !important;
+  background-color: #0d1117;
+  width: 25vw;
+  gap: 10px;
   display: flex;
-  flex-direction: row;
-  gap: 9vw;
+  flex-direction: column;
 }
 nav {
   background-color: transparent;
@@ -69,7 +78,7 @@ nav {
 .img-navbar {
   height: 22vh;
   padding-bottom: 9vh;
-  max-width:100%;
+  max-width: 100%;
 }
 nav #ull {
   background-color: transparent;
@@ -85,11 +94,19 @@ nav #ull {
 nav #ull li {
   list-style: none;
   color: black;
+  font-size: 1.5vw;
   line-height: 50px;
-  font-size: 20px;
-  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
 }
-
+nav #ull li a {
+  color: black !important;
+  font-size: 1.5vw;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
 nav label.che {
   float: right;
   margin-right: 30px;
@@ -127,7 +144,7 @@ nav input {
 .right-side-img-div img {
   transition: transform 0.3s ease-in-out;
   height: 100%;
-  max-width:100%;
+  max-width: 100%;
   object-fit: cover;
 }
 .typewriter {
@@ -694,28 +711,28 @@ nav input {
   background-color: black;
   width: 100%;
 }
-.adds-code  marquee{display: flex;
+.adds-code marquee {
+  display: flex;
   flex-direction: column;
   height: 50vh;
   background-color: black;
   width: 100%;
-
 }
 /*                                         adds css end  */
 /*                                     team card project */
-.team-card-main-div{
+.team-card-main-div {
   display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 90vh;
-        align-items: center;
-        justify-content: space-around;
-          padding-top: 10vh;
-          align-items: center;
-        /* background-color: black; */
-        color: black;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10vh;
+  align-items: center;
+  /* background-color: black; */
+  color: black;
 }
-.team-card-row-div{
+.team-card-row-div {
   display: flex;
   flex-direction: row;
   height: 100%;
@@ -731,7 +748,7 @@ nav input {
   align-items: center;
   justify-content: center;
   position: relative;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   cursor: pointer;
 }
 
@@ -744,16 +761,17 @@ nav input {
   align-items: center;
   justify-content: center;
   background-color: rgb(24, 24, 24);
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   color: rgb(155, 155, 155);
-  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
 }
 
 .card-Container-div:hover .profileDiv {
   transform: translateX(-25%) translateY(-20%);
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 .infoDiv {
@@ -775,7 +793,8 @@ nav input {
   align-items: center;
   justify-content: flex-end;
   background-color: aliceblue;
-  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif;
   gap: 2px;
 }
 
