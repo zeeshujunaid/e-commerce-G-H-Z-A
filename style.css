@@ -62,7 +62,7 @@ body {
 }
 .li-set-div {
   color: white !important;
-  background-color: #0d1117;
+  background-color: rgba(255, 255, 255, 0.829);
   width: 25vw;
   gap: 10px;
   display: flex;
@@ -731,6 +731,9 @@ nav input {
   align-items: center;
   /* background-color: black; */
   color: black;
+}
+.team-card-main-div h1{
+  font-weight: 900;
 }
 .team-card-row-div {
   display: flex;
