@@ -711,7 +711,7 @@ nav input {
   background-color: black;
   width: 100%;
 }
-.adds-code marquee {
+.adds-code img {
   display: flex;
   flex-direction: column;
   height: 50vh;
