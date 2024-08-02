@@ -133,7 +133,7 @@ nav input {
 .right-side-img-div {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 110vh;
   background-color: transparent;
   width: 100%;
   position: relative;
