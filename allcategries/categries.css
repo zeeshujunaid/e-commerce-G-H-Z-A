@@ -20,107 +20,211 @@
     position: fixed;
     z-index: 100;
   }
-  /*                           navbar area css */
-  .navbar-main-div {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 10vh;
-    width: 100%;
-    /* color: white; */
-    color: #988735;
-    background-color: transparent; /* Semi-transparent background */
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-  }
-  .dropdown2 {
-    /* height: 60vh; */
-    display: flex;
-    flex-direction: row;
-    background-color: transparent !important;
-    transition: 0.7s;
-    border: none !important;
-    object-fit: contain;
-  }
-  .dropdown2 li {
-    background-color: rgba(255, 255, 255, 0.555) !important;
-    display: flex;
-    flex-direction: row;
-    text-transform: uppercase;
-  }
-  .li-set-div {
-    display: flex;
-    flex-direction: row;
-    gap: 9vw;
-  }
-  nav {
-    background-color: transparent;
-    height: 50px;
-    position: fixed;
-    align-items: center;
-    width: 100%;
-  }
-  .img-navbar {
-    height: 22vh;
-    padding-bottom: 9vh;
-    max-width:100%;
-  }
-  nav #ull {
-    background-color: transparent;
-    position: fixed;
-    text-align: center;
-    width: 100%;
-    height: 100vh;
-    top: -100%;
-    margin-top: 20px;
-    transition: 0.7s;
-    z-index: -1;
-  }
-  nav #ull li {
-    list-style: none;
-    color: black;
-    line-height: 50px;
-    font-size: 20px;
-    text-transform: uppercase;
-  }
-  
-  nav #ull li  a{
-    color:black !important;
+ /*                           navbar area css */
+.navbar-main-div {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  /* color: white; */
+  color: #988735;
+  background-color: transparent; /* Semi-transparent background */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.dropdown a {
+  background-color: transparent !important;
+  border: none !important;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+.dropdown2 {
+  /* height: 60vh; */
+  display: flex;
+  flex-direction: row;
+  background-color: transparent !important;
+  border: none !important;
+}
+.dropdown2 li {
+  flex-direction: column;
+}
+.row-div-dropdown {
+  display: flex;
+  flex-direction: row;
+}
+.li-set-div {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.829);
+  width: 25vw;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+nav {
+  background-color: transparent;
+  height: 50px;
+  position: fixed;
+  align-items: center;
+  width: 100%;
+}
+.img-navbar {
+  height: 22vh;
+  padding-bottom: 9vh;
+  max-width: 100%;
+}
+nav #ull {
+  background-color: transparent;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  top: -100%;
+  margin-top: 20px;
+  transition: 0.7s;
+  z-index: -1;
+}
+nav #ull li {
+  list-style: none;
+  color: black;
+  font-size: 1.5vw;
+  line-height: 50px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+nav #ull li a {
+  color: black !important;
+  font-size: 1.5vw;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+nav label.che {
+  float: right;
+  margin-right: 30px;
+  font-size: 50px;
+}
+nav input {
+  display: none;
+}
 
-    text-decoration:none;
+#check:checked ~ #ull {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: 48vh;
+  align-items: center;
+  object-fit: contain;
+  top: 10%;
+}
+  /* Image Gallery Area CSS */
+
+.right-side-img-div {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: transparent;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.right-side-img-div img {
+  transition: transform 0.3s ease-in-out;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+.typewriter {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
   }
-  nav label.che {
-    float: right;
-    margin-right: 30px;
-    font-size: 50px;
+  to {
+    width: 100%;
   }
-  nav input {
-    display: none;
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
   }
-  
-  #check:checked ~ #ull {
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(9.5px);
-    -webkit-backdrop-filter: blur(9.5px);
-    border-radius: 40px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    height: 48vh;
-    align-items: center;
-    object-fit: contain;
-    top: 10%;
+  50% {
+    border-color: orange;
   }
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.473);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.image-overlay h1 {
+  color: black;
+  font-size: 10vh;
+  padding-bottom: 5vh;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.right-side-img-div:hover .image-overlay {
+  opacity: 1;
+}
+
+/*                           image gallery  area css ends              */
   /*  */
   /* before adding the img to the div with the 
 "card-img" class, remove css styles 
 .card-img .img::before and .card-img .img::after,
 then set the desired styles for .card-img. */
+
+.row-main-card-div{
+  display: flex;
+  flex-direction: row;
+  height: 70vh;
+  justify-content: space-around;
+  align-items: center;
+}
 .card {
   --font-color: #323232;
   --font-color-sub: #666;
@@ -163,7 +267,6 @@ then set the desired styles for .card-img. */
   border-top-right-radius: 80px 50px;
   border: 2px solid black;
   background-color: #228b22;
-  background-image: linear-gradient(to top,transparent 10px,rgba(0,0,0,0.3) 10px,rgba(0,0,0,0.3) 13px,transparent 13px);
 }
 
 .card-img .img::before {
@@ -275,4 +378,315 @@ then set the desired styles for .card-img. */
 
 .card-btn:active {
   transform: translateY(3px);
+}
+/*  */
+/*                             footer css code               */
+.card {
+  width: 190px;
+  height: 254px;
+  background: #f5f5f5;
+  padding: 2rem 1.5rem;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/*Image*/
+.card-avatar {
+  --size: 60px;
+  background: linear-gradient(to top, #f1e1c1 0%, #fcbc97 100%);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+/*Card footer*/
+.card-social {
+  transform: translateY(200%);
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.card-social__item {
+  list-style: none;
+}
+
+.card-social__item svg {
+  display: block;
+  height: 18px;
+  width: 18px;
+  fill: #515f65;
+  cursor: pointer;
+  transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+/*Text*/
+.card-title {
+  color: #333;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.card-subtitle {
+  color: #859ba8;
+  font-size: 0.8em;
+}
+
+/*Hover*/
+.card:hover {
+  box-shadow: 0 8px 50px #23232333;
+}
+
+.card:hover .card-info {
+  transform: translateY(-5%);
+}
+
+.card:hover .card-social {
+  transform: translateY(100%);
+  opacity: 1;
+}
+
+.card-social__item svg:hover {
+  fill: #232323;
+  transform: scale(1.1);
+}
+
+.card-avatar:hover {
+  transform: scale(1.1);
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+#picassoFooter {
+  background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+  color: #ffffff;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-section {
+  margin: 20px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  color: #f0f0f0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-section h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 50%;
+  height: 2px;
+  background: linear-gradient(90deg, #ffd700, #afeeee);
+  transition: width 0.3s ease;
+}
+
+.footer-section h3:hover::after {
+  width: 100%;
+}
+
+.footer-navigation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-navigation ul li {
+  margin-bottom: 10px;
+}
+
+.hover-effect {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.hover-effect::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ffd700;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.hover-effect:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.hover-effect:hover {
+  color: #ffd700;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-logo .logo {
+  width: 100px;
+  height: 100px;
+  transition: transform var(--transition-speed);
+}
+
+.footer-logo .logo:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.footer-logo .logo circle,
+.footer-logo .logo path {
+  transition: all var(--transition-speed);
+}
+
+.footer-logo .logo:hover circle {
+  r: 47;
+}
+
+.footer-logo .logo:hover path {
+  d: path("M25 75 Q 50 15 75 75");
+}
+
+.footer-logo h2 {
+  font-family: "Playfair Display", serif;
+  margin-top: 10px;
+  font-size: 1.8em;
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-logo p {
+  margin-top: 5px;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.footer-contact p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-contact i {
+  margin-right: 10px;
+  color: #afeeee;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #ffd700;
+  color: #1a1a1a;
+  transform: translateY(-3px);
+}
+
+.footer-art {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 2;
+}
+/*          fotter css end  */
+/*          responsive design code start */
+@media screen and (max-width: 800px) {
+  /* fotter content start */
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .footer-section h3::after {
+    left: 25%;
+    width: 50%;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-art {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+  }
+
+  #picassoCanvas {
+    width: 100%;
+    height: 100%;
+  }
+  /* fotter content  ends */
 }

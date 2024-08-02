@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SPORTS HUB</title>
     <link rel="stylesheet" href="categries.css" />
     <link
@@ -27,160 +27,496 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-</head>
-<body>
-        <!--                                lader code start                          -->
-        <div id="loader-main-div"></div>
-        <!--                                loader code ends                          -->
-    <!--                              NAVBAR CODE STARTS                          -->
-    <div class="navbar-main-div">
-      <nav class="">
-        <input type="checkbox" id="check" />
-        <label for="check" class="che">&#9778;</label>
-        <label for="digital"
-          ><img src="../pics/DDD.PNG" class="img-navbar"
-        /></label>
-        <ul id="ull">
-          <li><a href="../index.html">home</a></li>
-          <li>
-            <div class="dropdown">
-              <a
-                class="btn btn-secondary dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                CATEGORY
-              </a>
-              <ul class="dropdown-menu dropdown2">
-                <div class="li-set-div">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./basket.ball.html"
-                      >basketball items</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./cricket.items.html"
-                      >cricket items</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./football.items.html"
-                      >football items</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./hockey.items.html"
-                      >hockey items</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./tennis.items.html"
-                      >tennis items</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="./sports.shoes.html"
-                      >sports shoes</a
-                    >
-                  </li>
-                </div>
-              </ul>
+  </head>
+  <body>
+    <!--                                lader code start                          -->
+    <div id="loader-main-div"></div>
+    <!--                                loader code ends                          -->
+<!--                              NAVBAR CODE STARTS                          -->
+<div class="navbar-main-div">
+  <nav class="">
+    <input type="checkbox" id="check" />
+    <label for="check" class="che">&#9778;</label>
+    <label for="digital"
+      ><img src="./pics/DDDD.png" class="img-navbar"
+    /></label>
+    <ul id="ull">
+      <li><a href="./index.html">HOME</a></li>
+      <li>
+        <div class="dropdown">
+          <a
+            class="btn btn-secondary dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            CATEGORY
+          </a>
+          <ul class="dropdown-menu dropdown2">
+            <div class="li-set-div">
+              <div class="row-div-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./allcategries/basket.ball.html"
+                    >basketball items</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./allcategries/cricket.items.html"
+                    >cricket items</a
+                  >
+                </li>
+              </div>
+              <div class="row-div-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./allcategries/football.items.html"
+                    >football items</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./allcategries/hockey.items.html"
+                    >hockey items</a
+                  >
+                </li>
+              </div>
+              <div class="row-div-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./allcategries/tennis.items.html"
+                    >tennis items</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./allcategries/sports.shoes.html"
+                    >sports shoes</a
+                  >
+                </li>
+              </div>
             </div>
-          </li>
-          <li>POST ADD</li>
-          <li>SEE YOUR ADD</li>
-          <li>CART</li>
-          <li>PROFILE</li>
-        </ul>
-      </nav>
-    </div>
-    <!--                               navbar code ends                          -->
-
-    <!--                    card area  start -->
-
-    <div style="display: flex;flex-direction: row;max-width: 100%;height: 50vh;background-color: aqua;">
-      <!-- 1 -->
-      <div class="card">
-        <div class="card-img"><div class="img"></div></div>
-        <div class="card-title">Product title</div>
-        <div class="card-subtitle">Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-        <hr class="card-divider">
-        <div class="card-footer">
-            <div class="card-price"><span>$</span> 123.45</div>
-            <button class="card-btn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
-            </button>
+          </ul>
         </div>
+      </li>
+      <li>POST ADD</li>
+      <li>SEE YOUR ADD</li>
+      <li>CART</li>
+      <li>PROFILE</li>
+    </ul>
+  </nav>
+</div>
+<!--                               navbar code ends                          -->
+
+    <!--                          Image Gallery Code Starts                       -->
+    <div class="right-side-img-div">
+      <img
+        src="./pics/imagegallerymainimg.webp"
+        data-aos="zoom-in"
+        alt="Main Photo"
+      />
+      <div class="image-overlay">
+        <div class="typewriter">
+          <h1>WELCOME TO SPORT HUB..</h1>
+        </div>
+      </div>
     </div>
-    <!-- 2 -->
-
+    <!--                          IMAGE GALLERY CODE ENDS                         -->
+    <!--                   1 line card area  start -->
+    <div class="row-main-card-div">
+      <!-- 1 card in row -->
+      <div class="card">
+        <div class="card-img">
+          <img src="../pics/airhockey.webp" style="height: 100%; width: 100%" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Product title</p>
+          <p class="text-body">Product description and details</p>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$499.49</span>
+          <div class="card-button">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/019/787/018/non_2x/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png"
+              style="height: 100%; width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- 2 card in row -->
+      <div class="card">
+        <div class="card-img">
+          <img src="../pics/airhockey.webp" style="height: 100%; width: 100%" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Product title</p>
+          <p class="text-body">Product description and details</p>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$499.49</span>
+          <div class="card-button">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/019/787/018/non_2x/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png"
+              style="height: 100%; width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- 3 card in row -->
+      <div class="card">
+        <div class="card-img">
+          <img src="../pics/airhockey.webp" style="height: 100%; width: 100%" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Product title</p>
+          <p class="text-body">Product description and details</p>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$499.49</span>
+          <div class="card-button">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/019/787/018/non_2x/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png"
+              style="height: 100%; width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- 4 card in row -->
+      <div class="card">
+        <div class="card-img">
+          <img src="../pics/airhockey.webp" style="height: 100%; width: 100%" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Product title</p>
+          <p class="text-body">Product description and details</p>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$499.49</span>
+          <div class="card-button">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/019/787/018/non_2x/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png"
+              style="height: 100%; width: 100%"
+            />
+          </div>
+        </div>
+      </div>
     </div>
-    <!--                    card area  ends -->
+    <!--                   1 line card area  ends -->
+    <!--                  2 line  card area  start -->
+    <div class="row-main-card-div">
+      <!-- 1 card in row -->
+      <div class="card">
+        <div class="card-img">
+          <img src="../pics/airhockey.webp" style="height: 100%; width: 100%" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Product title</p>
+          <p class="text-body">Product description and details</p>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$499.49</span>
+          <div class="card-button">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/019/787/018/non_2x/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png"
+              style="height: 100%; width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- 2 card in row -->
+      <div class="card">
+        <div class="card-img">
+          <img src="../pics/airhockey.webp" style="height: 100%; width: 100%" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Product title</p>
+          <p class="text-body">Product description and details</p>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$499.49</span>
+          <div class="card-button">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/019/787/018/non_2x/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png"
+              style="height: 100%; width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- 3 card in row -->
+      <div class="card">
+        <div class="card-img">
+          <img src="../pics/airhockey.webp" style="height: 100%; width: 100%" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Product title</p>
+          <p class="text-body">Product description and details</p>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$499.49</span>
+          <div class="card-button">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/019/787/018/non_2x/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png"
+              style="height: 100%; width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- 4 card in row -->
+      <div class="card">
+        <div class="card-img">
+          <img src="../pics/airhockey.webp" style="height: 100%; width: 100%" />
+        </div>
+        <div class="card-info">
+          <p class="text-title">Product title</p>
+          <p class="text-body">Product description and details</p>
+        </div>
+        <div class="card-footer">
+          <span class="text-title">$499.49</span>
+          <div class="card-button">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/019/787/018/non_2x/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png"
+              style="height: 100%; width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--                  2  card area  ends -->
 
+        <!--                  3 line  card area  start -->
+        <div class="row-main-card-div">
+          <!-- 1 card in row -->
+          <div class="card">
+            <div class="card-img">
+              <img src="../pics/airhockey.webp" style="height: 100%; width: 100%" />
+            </div>
+            <div class="card-info">
+              <p class="text-title">Product title</p>
+              <p class="text-body">Product description and details</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-title">$499.49</span>
+              <div class="card-button">
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/019/787/018/non_2x/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png"
+                  style="height: 100%; width: 100%"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- 2 card in row -->
+          <div class="card">
+            <div class="card-img">
+              <img src="../pics/airhockey.webp" style="height: 100%; width: 100%" />
+            </div>
+            <div class="card-info">
+              <p class="text-title">Product title</p>
+              <p class="text-body">Product description and details</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-title">$499.49</span>
+              <div class="card-button">
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/019/787/018/non_2x/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png"
+                  style="height: 100%; width: 100%"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- 3 card in row -->
+          <div class="card">
+            <div class="card-img">
+              <img src="../pics/airhockey.webp" style="height: 100%; width: 100%" />
+            </div>
+            <div class="card-info">
+              <p class="text-title">Product title</p>
+              <p class="text-body">Product description and details</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-title">$499.49</span>
+              <div class="card-button">
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/019/787/018/non_2x/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png"
+                  style="height: 100%; width: 100%"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- 4 card in row -->
+          <div class="card">
+            <div class="card-img">
+              <img src="../pics/airhockey.webp" style="height: 100%; width: 100%" />
+            </div>
+            <div class="card-info">
+              <p class="text-title">Product title</p>
+              <p class="text-body">Product description and details</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-title">$499.49</span>
+              <div class="card-button">
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/019/787/018/non_2x/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png"
+                  style="height: 100%; width: 100%"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--                  3 line  card area  ends -->
+ <!--                          fotter code start                            -->
+ <footer id="picassoFooter">
+  <div class="footer-content">
+    <div class="footer-section footer-logo">
+      <svg
+        class="logo"
+        width="100"
+        height="100"
+        viewBox="0 0 100 100"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="50"
+          cy="50"
+          r="45"
+          fill="#1a1a1a"
+          stroke="#FFD700"
+          stroke-width="5"
+        />
+        <path
+          d="M30 70 Q 50 20 70 70"
+          stroke="#AFEEEE"
+          stroke-width="5"
+          fill="none"
+        />
+        <circle cx="50" cy="50" r="10" fill="#FFD700" />
+      </svg>
+      <h2>PicassoTech</h2>
+      <p>Innovating the future, one brushstroke at a time.</p>
+    </div>
+    <div class="footer-section footer-navigation">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home" class="hover-effect">Home</a></li>
+        <li><a href="#about" class="hover-effect">About Us</a></li>
+        <li><a href="#services" class="hover-effect">Services</a></li>
+        <li><a href="#portfolio" class="hover-effect">Portfolio</a></li>
+        <li><a href="#contact" class="hover-effect">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section footer-contact">
+      <h3>Contact Us</h3>
+      <p><i class="fas fa-envelope"></i> info@picassotech.com</p>
+      <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+      <p>
+        <i class="fas fa-map-marker-alt"></i> 123 Art Street, Creative City,
+        12345
+      </p>
+    </div>
+    <div class="footer-section footer-cta">
+      <h3>Stay Connected</h3>
+      <div class="social-icons">
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          class="social-icon"
+          aria-label="Facebook"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          class="social-icon"
+          aria-label="Twitter"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          class="social-icon"
+          aria-label="Instagram"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          class="social-icon"
+          aria-label="LinkedIn"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-art">
+    <canvas id="picassoCanvas"></canvas>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 PicassoTech. All rights reserved.</p>
+    <nav class="footer-legal">
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#terms">Terms of Service</a>
+      <a href="#cookies">Cookie Policy</a>
+    </nav>
+  </div>
+</footer>
+<!--                           footer CODE ENDS                             -->
 
-        <!--                             SCRIPT TAGS                                  -->
-        <script src="../index.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-          AOS.init();
-        </script>
-        <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-          crossorigin="anonymous"
-        ></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-        <script>
-          new Swiper(".swiper", {
-            loop: true,
-            effect: "coverflow",
-            centeredSlides: true,
-            slidesPerView: "auto",
-            speed: 500,
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-    
-            breakpoints: {
-              768: {
-                centeredSlides: false,
-                coverflowEffect: {
-                  depth: 0,
-    
-                  rotate: 0,
-    
-                  stretch: -10,
-                },
-              },
-            },
-            autoplay: {
-              delay: 3000,
-            },
+    <!--                             SCRIPT TAGS                                  -->
+    <script src="../index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper(".swiper", {
+        loop: true,
+        effect: "coverflow",
+        centeredSlides: true,
+        slidesPerView: "auto",
+        speed: 500,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        breakpoints: {
+          768: {
+            centeredSlides: false,
             coverflowEffect: {
-              depth: 80,
-              rotate: 50,
-              stretch: 20,
+              depth: 0,
+
+              rotate: 0,
+
+              stretch: -10,
             },
-          });
-        </script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <!--                                SCRIPT TAG END                      -->
-    </body>
-    </html>
+          },
+        },
+        autoplay: {
+          delay: 3000,
+        },
+        coverflowEffect: {
+          depth: 80,
+          rotate: 50,
+          stretch: 20,
+        },
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--                                SCRIPT TAG END                      -->
+  </body>
+</html>
