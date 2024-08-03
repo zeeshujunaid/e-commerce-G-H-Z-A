@@ -729,7 +729,7 @@ nav input {
   justify-content: space-around;
   padding-top: 10vh;
   align-items: center;
-  /* background-color: black; */
+  /* background-color: #181818; */
   color: black;
 }
 .team-card-main-div h1{
@@ -928,7 +928,8 @@ nav input {
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
 #picassoFooter {
-  background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+  /* background: linear-gradient(135deg, #1a1a1a, #2c2c2c); */
+  background-color: #181818;
   color: #ffffff;
   padding: 40px 20px;
   font-family: "Poppins", sans-serif;

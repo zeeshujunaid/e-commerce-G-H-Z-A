@@ -226,3 +226,29 @@ var TxtType = function(el, toRotate, period) {
         document.body.appendChild(css);
     };
 
+// Add to cart start
+function handleCart(price, details) {
+    var arr = [];
+    arr.push({ amount: price, itemdetails: details });
+    console.log(arr);
+  
+    var checkData = localStorage.getItem("cartList");
+    if (checkData !== null) {
+      var parseItem = JSON.parse(checkData);
+      localStorage.setItem("cartList", JSON.stringify([...parseItem, arr]));
+    } else {
+      localStorage.setItem("cartList", JSON.stringify([arr]));
+    }
+  }
+  var renderCart = document.getElementById("cart-list");
+  var getItems = localStorage.getItem("cartList");
+  var x = JSON.parse(getItems);
+  console.log(x);
+  
+  for (let index = 0; index < x.length; index++) {
+    renderCart.innerHTML += `<li>${x[index][0].amount}</li> 
+      <li> ${x[index][0].itemdetails}</li>
+      
+      `;
+  }
+  // add to cart end
