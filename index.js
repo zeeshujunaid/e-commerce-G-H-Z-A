@@ -225,30 +225,46 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
+// profile code start
+function getdata() {
+    var firstname = document.getElementById("getname").value;
+    var lastname = document.getElementById("getlastname").value;
+    var profileimage = document.getElementById("pimg").files[0];
+    
+    var reader = new FileReader();
+    reader.onloadend = function() {
+        var base64data = reader.result;
+        
+        localStorage.setItem('name', JSON.stringify(firstname));
+        localStorage.setItem('newname', JSON.stringify(lastname));
+        localStorage.setItem('profile', JSON.stringify(base64data));
 
-// Add to cart start
-function handleCart(price, details) {
-    var arr = [];
-    arr.push({ amount: price, itemdetails: details });
-    console.log(arr);
-  
-    var checkData = localStorage.getItem("cartList");
-    if (checkData !== null) {
-      var parseItem = JSON.parse(checkData);
-      localStorage.setItem("cartList", JSON.stringify([...parseItem, arr]));
-    } else {
-      localStorage.setItem("cartList", JSON.stringify([arr]));
+        console.log("Data saved.");
     }
-  }
-  var renderCart = document.getElementById("cart-list");
-  var getItems = localStorage.getItem("cartList");
-  var x = JSON.parse(getItems);
-  console.log(x);
-  
-  for (let index = 0; index < x.length; index++) {
-    renderCart.innerHTML += `<li>${x[index][0].amount}</li> 
-      <li> ${x[index][0].itemdetails}</li>
-      
-      `;
-  }
-  // add to cart end
+    
+    if (profileimage) {
+        reader.readAsDataURL(profileimage);
+    } else {
+        console.log("No image selected.");
+    }
+}
+
+function see() {
+    const firstname = JSON.parse(localStorage.getItem("name"));
+    const lastname = JSON.parse(localStorage.getItem("newname"));
+    const img = JSON.parse(localStorage.getItem("profile"));
+    var profilename = document.getElementById("first");
+    var secondname = document.getElementById("second");
+    var finalimg = document.getElementById("proimg");
+    var main = document.getElementById("di");
+    
+    profilename.innerHTML = firstname;
+    secondname.innerHTML = lastname;
+    finalimg.src = img;
+    main.innerHTML += `<ul><li>${firstname}</li><li id="second"></li><li style="height: 40px;width: 40px;">
+              <img src="#pimg" alt="" id="proimg" style="height: 100%;width: 100%;">
+            </li></ul>`
+    console.log(profilename.innerHTML);
+    console.log(secondname.innerHTML);
+    console.log(finalimg.src);
+}

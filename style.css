@@ -1117,36 +1117,14 @@ nav input {
 /*          fotter css end  */
 /*          responsive design code start */
 @media screen and (max-width: 800px) {
-  /* fotter content start */
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
+  /* .right-side-img-div {
+    display: none;
   }
-
-  .footer-section {
-    text-align: center;
-    margin: 10px 0;
-  }
-
-  .footer-section h3::after {
-    left: 25%;
-    width: 50%;
-  }
-
-  .social-icons {
-    justify-content: center;
-  }
-
-  .footer-art {
-    position: relative;
-    width: 100%;
-    height: 150px;
-    margin-top: 20px;
-  }
-
-  #picassoCanvas {
-    width: 100%;
-    height: 100%;
-  }
-  /* fotter content  ends */
+  .trending-slider-main-cointainer {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    background-color: #2a4aff !important;
+    color: white;
+  } */
 }
