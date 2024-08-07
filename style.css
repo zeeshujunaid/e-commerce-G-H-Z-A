@@ -60,14 +60,77 @@ body {
   display: flex;
   flex-direction: row;
 }
-.li-set-div {
-  color: white !important;
-  background-color: rgba(255, 255, 255, 0.829);
-  width: 25vw;
-  gap: 10px;
+/* From Uiverse.io by aadium */ 
+.paste-button {
+  position: relative;
+  display: block;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+
 }
+
+.button {
+  background-color: transparent;
+  color: #212121;
+  display: flex;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid transparent;
+  border-radius: 15px;
+}
+
+.dropdown-content {
+  display: none;
+  font-size: 15px;
+  position: absolute;
+  z-index: 1;
+  height: 10vh !important; 
+  min-width: 200px;
+  background-color: #2a4aff;
+  /* background-color: #212121; */
+  /* border: 2px solid #4CAF50;  */
+  /* border-radius: 0px 15px 15px 15px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+}
+
+.dropdown-content a {
+  color: WHITE;
+  background-color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  transition: 0.1s;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+  color: black;
+}
+
+.dropdown-content a:focus {
+  background-color: #212121;
+  color: #4CAF50;
+}
+
+.dropdown-content #top:hover {
+  border-radius: 0px 13px 0px 0px;
+}
+
+.dropdown-content #bottom:hover {
+  border-radius: 0px 0px 13px 13px;
+}
+
+.paste-button:hover button {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.paste-button:hover .dropdown-content {
+  display: block;
+}
+
 nav {
   background-color: transparent;
   height: 50px;

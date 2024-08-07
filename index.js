@@ -249,22 +249,22 @@ function getdata() {
     }
 }
 
+var profilename = document.getElementById("first");
+var secondname = document.getElementById("second");
+var finalimg = document.getElementById("proimg");
+var main = document.getElementById("di");
 function see() {
     const firstname = JSON.parse(localStorage.getItem("name"));
-    const lastname = JSON.parse(localStorage.getItem("newname"));
-    const img = JSON.parse(localStorage.getItem("profile"));
-    var profilename = document.getElementById("first");
-    var secondname = document.getElementById("second");
-    var finalimg = document.getElementById("proimg");
-    var main = document.getElementById("di");
+    console.log(firstname);
     
-    profilename.innerHTML = firstname;
-    secondname.innerHTML = lastname;
-    finalimg.src = img;
-    main.innerHTML += `<ul><li>${firstname}</li><li id="second"></li><li style="height: 40px;width: 40px;">
-              <img src="#pimg" alt="" id="proimg" style="height: 100%;width: 100%;">
+    const lastname = JSON.parse(localStorage.getItem("newname"));
+  
+    const img = JSON.parse(localStorage.getItem("profile"));
+    main.innerHTML += `<ul><li>${firstname}</li><li id="second">${lastname}</li><li style="height: 40px;width: 40px;">
+              <img src=${img} alt="" id="proimg" style="height: 100%;width: 100%; onclick="see()">
             </li></ul>`
     console.log(profilename.innerHTML);
     console.log(secondname.innerHTML);
     console.log(finalimg.src);
 }
+see()
