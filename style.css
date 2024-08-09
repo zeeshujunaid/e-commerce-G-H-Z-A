@@ -1182,6 +1182,7 @@ nav input {
 /*          fotter css end  */
 /*          responsive design code start */
 @media screen and (max-width: 900px) {
+  /* navbar code  start */
   .navbar-main-div {
  display: flex;
   }
@@ -1193,18 +1194,22 @@ nav input {
     height: 100%;
     width: 100%;
   }
+  /* navbar code  end */
+  /* image gallery code start */
   .right-side-img-div{
     display: flex;
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
-  /*                     trending scrooling image css code start         */
+  /* image gallery code end */
+  /*                     trending scrooling image  start         */
 .trending-slider-main-cointainer {
   display: flex;
   flex-direction: row;
   width: 100%;
   color: white;
+  padding-top: 4vh;
 }
 .trending-slider-row-div {
   display: flex;
@@ -1218,12 +1223,27 @@ nav input {
   width: 100%;
   margin: 20px auto;
 }
+  /*                     trending scrooling image  end         */
+  /* trendin heading + round card div code start    */
   .treinding-item-heading{
-    display: none;
+    display: flex;
   }
   .round-card-main-cointainer{
-    display: none;
+    display: flex;
+    flex-direction: column !important;
+    width: 100%;
   }
+  .res-div{
+    display: flex;
+    flex-direction:row ;
+    width: 100%;
+  }
+  .card{
+
+    display: flex;
+    flex-direction: row;
+  }
+  /* trendin heading + round card div code end    */
   .adds-code{
     display: none;
   }
