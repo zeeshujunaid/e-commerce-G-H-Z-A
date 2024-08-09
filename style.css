@@ -304,6 +304,12 @@ nav input {
   --theme: black;
 }
 
+@media (min-width: 768px) {
+  .image-slider-container {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
 
 .image-slider-container .image-slider-heading {
   display: flex;
@@ -1179,6 +1185,9 @@ nav input {
   .navbar-main-div {
  display: flex;
   }
+  .img-navbar{
+    width: 60%;
+  }
   .typewriter {
     display: flex;
     height: 100%;
@@ -1193,20 +1202,22 @@ nav input {
   /*                     trending scrooling image css code start         */
 .trending-slider-main-cointainer {
   display: flex;
-  flex-direction: column;
-  width: 50%;
+  flex-direction: row;
+  width: 100%;
   color: white;
-  background-color: red !important;
 }
 .trending-slider-row-div {
   display: flex;
   flex-direction: row;
-  width: 50%;
+  width: 100%;
   background-color: white;
   color: white;
   /* background-color: #808080; */
 }
-
+.image-slider-container {
+  width: 100%;
+  margin: 20px auto;
+}
   .treinding-item-heading{
     display: none;
   }
