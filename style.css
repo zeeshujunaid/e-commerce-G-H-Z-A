@@ -1231,9 +1231,9 @@ nav input {
  .round-card-main-cointainer{
   display: flex;
   flex-direction: column !important;
-  background-color: red;
+  background-color: rgba(255, 255, 255, 0.404);
   height: 100%;
-  width: 50%;
+  width: 100%;
  }
  
   /* trendin heading + round card div code end    */
@@ -1242,5 +1242,123 @@ nav input {
   }
   .team-card-main-div{
     display: none;
+  }
+}
+/*  */
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .round-card-main-cointainer h1 {
+    padding-left: 30vw;
+    font-size: 6vh;
+  }
+
+  .round-card-heading-div {
+    flex-direction: column;
+    height: auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .round-card-heading-div h4 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .round-card-heading-div h6 a {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .card {
+    width: 250px;
+    height: 180px !important;
+  }
+
+  .card .container-image,
+  .card .content {
+    width: 160px;
+    height: 160px;
+  }
+
+  .card:hover .content {
+    width: 250px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .round-card-main-cointainer h1 {
+    padding-left: 20vw;
+    font-size: 5vh;
+  }
+
+  .round-card-heading-div {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  .round-card-heading-div h4 {
+    font-size: 20px;
+  }
+
+  .round-card-heading-div h6 a {
+    font-size: 14px;
+  }
+
+  .card {
+    width: 200px;
+    height: 150px !important;
+  }
+
+  .card .container-image,
+  .card .content {
+    width: 140px;
+    height: 140px;
+  }
+
+  .card:hover .content {
+    width: 200px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .round-card-main-cointainer h1 {
+    padding-left: 10vw;
+    font-size: 4vh;
+  }
+
+  .round-card-heading-div {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .round-card-heading-div h4 {
+    font-size: 18px;
+  }
+
+  .round-card-heading-div h6 a {
+    font-size: 12px;
+  }
+
+  .round-card-row-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 180px;
+    height: 130px !important;
+  }
+
+  .card .container-image,
+  .card .content {
+    width: 120px;
+    height: 120px;
+  }
+
+  .card:hover .content {
+    width: 180px;
+    height: 120px;
   }
 }
