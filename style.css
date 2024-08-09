@@ -599,8 +599,10 @@ nav input {
   font-size: 30px;
   font-weight: 800;
 }
-.round-card-heading-div h6 {
+.round-card-heading-div h6 a{
   font-size: 20px;
+  text-decoration: none; 
+  color: black;
 }
 .round-card-row-div {
   /* padding-top: 2vh; */
@@ -1179,15 +1181,34 @@ nav input {
 }
 /*          fotter css end  */
 /*          responsive design code start */
-@media screen and (max-width: 800px) {
-  /* .right-side-img-div {
+@media screen and (max-width: 900px) {
+  .navbar-main-div {
+ display: flex;
+  }
+  .typewriter {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  .right-side-img-div{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .trending-slider-main-cointainer{
     display: none;
   }
-  .trending-slider-main-cointainer {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    background-color: #2a4aff !important;
-    color: white;
-  } */
+  .treinding-item-heading{
+    display: none;
+  }
+  .round-card-main-cointainer{
+    display: none;
+  }
+  .adds-code{
+    display: none;
+  }
+  .team-card-main-div{
+    display: none;
+  }
 }
