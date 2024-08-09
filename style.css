@@ -1228,21 +1228,14 @@ nav input {
   .treinding-item-heading{
     display: flex;
   }
-  .round-card-main-cointainer{
-    display: flex;
-    flex-direction: column !important;
-    width: 100%;
-  }
-  .res-div{
-    display: flex;
-    flex-direction:row ;
-    width: 100%;
-  }
-  .card{
-
-    display: flex;
-    flex-direction: row;
-  }
+ .round-card-main-cointainer{
+  display: flex;
+  flex-direction: column !important;
+  background-color: red;
+  height: 100%;
+  width: 50%;
+ }
+ 
   /* trendin heading + round card div code end    */
   .adds-code{
     display: none;
