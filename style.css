@@ -1234,6 +1234,7 @@ nav input {
   background-color: rgba(255, 255, 255, 0.404);
   height: 100%;
   width: 100%;
+  padding-bottom: 1vh;
  }
  
   /* trendin heading + round card div code end    */
@@ -1241,7 +1242,7 @@ nav input {
     display: none;
   }
   .team-card-main-div{
-    display: none;
+    display:flex ;
   }
 }
 /*  */

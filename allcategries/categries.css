@@ -719,37 +719,67 @@ then set the desired styles for .card-img. */
 }
 /*          fotter css end  */
 /*          responsive design code start */
-@media screen and (max-width: 800px) {
-  /* fotter content start */
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
+@media screen and (max-width: 900px) {
+  /* navbar code  start */
+  .navbar-main-div {
+ display: flex;
   }
-
-  .footer-section {
-    text-align: center;
-    margin: 10px 0;
+  .img-navbar{
+    width: 60%;
   }
-
-  .footer-section h3::after {
-    left: 25%;
-    width: 50%;
-  }
-
-  .social-icons {
-    justify-content: center;
-  }
-
-  .footer-art {
-    position: relative;
+  .typewriter {
+    display: flex;
+    height: 100%;
     width: 100%;
-    height: 150px;
-    margin-top: 20px;
   }
-
-  #picassoCanvas {
+  /* navbar code  end */
+  /* image gallery code start */
+  .right-side-img-div{
+    display: flex;
     width: 100%;
     height: 100%;
+    object-fit: contain;
   }
-  /* fotter content  ends */
+  /* image gallery code end */
+  /*                     trending scrooling image  start         */
+.trending-slider-main-cointainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: white;
+  padding-top: 4vh;
+}
+.trending-slider-row-div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: white;
+  color: white;
+  /* background-color: #808080; */
+}
+.image-slider-container {
+  width: 100%;
+  margin: 20px auto;
+}
+  /*                     trending scrooling image  end         */
+  /* trendin heading + round card div code start    */
+  .treinding-item-heading{
+    display: flex;
+  }
+ .round-card-main-cointainer{
+  display: flex;
+  flex-direction: column !important;
+  background-color: rgba(255, 255, 255, 0.404);
+  height: 100%;
+  width: 100%;
+  padding-bottom: 1vh;
+ }
+ 
+  /* trendin heading + round card div code end    */
+  .adds-code{
+    display: none;
+  }
+  .team-card-main-div{
+    display:flex ;
+  }
 }
