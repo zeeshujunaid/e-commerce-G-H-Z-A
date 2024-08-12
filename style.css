@@ -1256,13 +1256,18 @@ justify-content: space-around;
 align-items: center;
 }
 .div-for-2-card{
-  display: flex;flex-direction: row;height: 100%;width: 50%;justify-content: space-around;
+  display: flex;flex-direction: row;height: 100%;width: 50%;justify-content: space-around;justify-content: center;align-items: center;
 }
 .div-card{
   display: flex;flex-direction: column;justify-content: center;align-items: center;height: 20vh;align-items: center;justify-content: center;
 }
 .div-card img{
 height: 40%;width: 80%;
+}
+.div-card h1{
+  height: 10%;
+  width: 100%;
+  font-size: medium;
 }
 /*                  after images profile and all area codes end      */
   /*                     trending scrooling image  start         */
