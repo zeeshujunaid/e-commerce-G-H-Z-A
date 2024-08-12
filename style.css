@@ -577,6 +577,9 @@ nav input {
 
   /* background-color: #f5f5f5; */
 }
+.round-card-res-main-div{
+  display: flex;flex-direction: row;height: 100%;width: 100%;background-color: aqua;
+}
 .round-card-main-cointainer h1 {
   padding-left: 40vw;
   padding-bottom: 5vh;
@@ -1259,19 +1262,38 @@ nav input {
     display: flex;
     flex-direction: column !important;
     background-color: rgba(255, 255, 255, 0.404);
-    height: 100%;
+    height: auto;
     width: 100%;
     padding-bottom: 1vh;
   }
-
+  .round-card-res-main-div{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+  }
+  .round-card-row-div-first{
+  display: flex;flex-direction: row;height: 100%;width: 100%;background-color: blue;align-items: center;justify-content: space-around;
+  }
+.round-card-row-div-second{
+  display: flex;flex-direction: row;height: 100%;width: 100%;background-color: red;;align-items: center;justify-content: space-around;
+}
+.card:hover {
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  height: 200px !important;
+  background-color: yellow;
+}
   /* trendin heading + round card div code end    */
   .adds-code {
     display: none;
+  
   }
+  /* team cards start */
   .team-card-main-div {
     display: flex;
   }
-  /* team cards start */
   .main-div-for-res {
     display: flex;
     flex-direction: column;
