@@ -1232,7 +1232,7 @@ nav input {
   .right-side-img-div {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 50vh;
     object-fit: contain;
   }
   /* image gallery code end */
