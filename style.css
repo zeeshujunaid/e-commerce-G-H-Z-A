@@ -1223,9 +1223,7 @@ nav input {
     width: 60%;
   }
   .typewriter {
-    display: flex;
-    height: 100%;
-    width: 100%;
+    display: none;
   }
   /* navbar code  end */
   /* image gallery code start */
@@ -1260,7 +1258,11 @@ nav input {
     display: none;
   }
   .image-slider-title{
-   padding-left: 10vw;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
   }
   /*                     trending scrooling image  end         */
   /* trendin heading + round card div code start    */
