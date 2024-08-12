@@ -1252,6 +1252,7 @@ nav input {
   }
   .image-slider-title{
    padding-left: 10vw;
+   display: inline;
   }
   /*                     trending scrooling image  end         */
   /* trendin heading + round card div code start    */
