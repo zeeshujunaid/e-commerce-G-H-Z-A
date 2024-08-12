@@ -1284,11 +1284,12 @@ nav input {
   }
   
 .card:hover {
-  width: 200px;
-  align-items: center;
-  justify-content: center;
+  width: 500px !important;
+  align-items: center !important;
+  justify-content: center !important;
   height: 200px !important;
   background-color: yellow;
+  object-fit: contain;
 }
 .card:hover .container-image {
   opacity: 0;
