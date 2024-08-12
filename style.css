@@ -275,6 +275,21 @@ nav input {
 }
 
 /*                           image gallery  area css ends              */
+/*                  after images profile and all area codes start      */
+.main-div-for-profile-area{
+  display: flex;flex-direction: row;height: 50vh;width: 100%;padding-top: 10vh;
+justify-content: space-around;
+}
+.div-for-2-card{
+  display: flex;flex-direction: row;height: 100%;width: 50%;justify-content: space-around;
+}
+.div-card{
+  display: flex;flex-direction: column;justify-content: center;align-items: center;height: 30vh;
+}
+.div-card img{
+height: 80%;width: 100%;
+}
+/*                  after images profile and all area codes end      */
 /*                     trending scrooling image css code start         */
 .trending-slider-main-cointainer {
   display: flex;
@@ -1234,6 +1249,22 @@ nav input {
     object-fit: contain;
   }
   /* image gallery code end */
+  /*                  after images profile and all area codes start      */
+.main-div-for-profile-area{
+  display: flex;flex-direction: row;height: 20vh;width: 100%;padding-top: 4vh;
+justify-content: space-around;
+align-items: center;
+}
+.div-for-2-card{
+  display: flex;flex-direction: row;height: 100%;width: 50%;justify-content: space-around;
+}
+.div-card{
+  display: flex;flex-direction: column;justify-content: center;align-items: center;height: 20vh;align-items: center;justify-content: center;
+}
+.div-card img{
+height: 40%;width: 80%;
+}
+/*                  after images profile and all area codes end      */
   /*                     trending scrooling image  start         */
   .trending-slider-main-cointainer {
     display: flex;
