@@ -60,7 +60,7 @@ body {
   display: flex;
   flex-direction: row;
 }
-/* From Uiverse.io by aadium */ 
+/* From Uiverse.io by aadium */
 .paste-button {
   position: relative;
   display: block;
@@ -68,7 +68,6 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Oswald", sans-serif;
-
 }
 
 .button {
@@ -87,7 +86,7 @@ body {
   font-size: 15px;
   position: absolute;
   z-index: 1;
-  height: 10vh !important; 
+  height: 10vh !important;
   min-width: 200px;
   background-color: #2a4aff;
   /* background-color: #212121; */
@@ -112,7 +111,7 @@ body {
 
 .dropdown-content a:focus {
   background-color: #212121;
-  color: #4CAF50;
+  color: #4caf50;
 }
 
 .dropdown-content #top:hover {
@@ -599,9 +598,9 @@ nav input {
   font-size: 30px;
   font-weight: 800;
 }
-.round-card-heading-div h6 a{
+.round-card-heading-div h6 a {
   font-size: 20px;
-  text-decoration: none; 
+  text-decoration: none;
   color: black;
 }
 .round-card-row-div {
@@ -797,7 +796,29 @@ nav input {
   /* background-color: #181818; */
   color: black;
 }
-.team-card-main-div h1{
+.main-div-for-res {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+.row-first-div-for-res {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 50%;
+}
+.row-second-div-for-res {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 50%;
+}
+.team-card-main-div h1 {
   font-weight: 900;
 }
 .team-card-row-div {
@@ -1184,9 +1205,9 @@ nav input {
 @media screen and (max-width: 900px) {
   /* navbar code  start */
   .navbar-main-div {
- display: flex;
+    display: flex;
   }
-  .img-navbar{
+  .img-navbar {
     width: 60%;
   }
   .typewriter {
@@ -1196,7 +1217,7 @@ nav input {
   }
   /* navbar code  end */
   /* image gallery code start */
-  .right-side-img-div{
+  .right-side-img-div {
     display: flex;
     width: 100%;
     height: 100%;
@@ -1204,46 +1225,76 @@ nav input {
   }
   /* image gallery code end */
   /*                     trending scrooling image  start         */
-.trending-slider-main-cointainer {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  color: white;
-  padding-top: 4vh;
-}
-.trending-slider-row-div {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  background-color: white;
-  color: white;
-  /* background-color: #808080; */
-}
-.image-slider-container {
-  width: 100%;
-  margin: 20px auto;
-}
-  /*                     trending scrooling image  end         */
-  /* trendin heading + round card div code start    */
-  .treinding-item-heading{
+  .trending-slider-main-cointainer {
     display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: white;
+    padding-top: 4vh;
   }
- .round-card-main-cointainer{
-  display: flex;
-  flex-direction: column !important;
-  background-color: rgba(255, 255, 255, 0.404);
-  height: 100%;
-  width: 100%;
-  padding-bottom: 1vh;
- }
- 
-  /* trendin heading + round card div code end    */
-  .adds-code{
+  .trending-slider-row-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: white;
+    color: white;
+    /* background-color: #808080; */
+  }
+  .image-slider-container {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .swiper-pagination{
     display: none;
   }
-  .team-card-main-div{
-    display:flex ;
+  .image-slider-title{
+   padding-left: 10vw;
   }
+  /*                     trending scrooling image  end         */
+  /* trendin heading + round card div code start    */
+  .treinding-item-heading {
+    display: flex;
+  }
+  .round-card-main-cointainer {
+    display: flex;
+    flex-direction: column !important;
+    background-color: rgba(255, 255, 255, 0.404);
+    height: 100%;
+    width: 100%;
+    padding-bottom: 1vh;
+  }
+
+  /* trendin heading + round card div code end    */
+  .adds-code {
+    display: none;
+  }
+  .team-card-main-div {
+    display: flex;
+  }
+  /* team cards start */
+  .main-div-for-res {
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+    width: 100%;
+  }
+  .row-first-div-for-res {
+    display: flex;
+    justify-content: space-around !important;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+  }
+  .row-second-div-for-res {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+  }
+  /* team card ends */
 }
 /*  */
 /* Responsive Design */
