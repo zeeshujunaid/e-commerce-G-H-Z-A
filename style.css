@@ -1276,6 +1276,10 @@ nav input {
     height: auto;
     width: 100%;
     padding-bottom: 1vh;
+    gap: 4vh !important;
+  }
+  .round-card-row-div{
+    gap: 4vh;
   }
   .card {
     /* background-color: red !important;  */

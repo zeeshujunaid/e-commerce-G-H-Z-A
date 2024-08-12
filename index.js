@@ -226,45 +226,46 @@ var TxtType = function(el, toRotate, period) {
         document.body.appendChild(css);
     };
 // profile code start
-function getdata() {
-    var firstname = document.getElementById("getname").value;
-    var lastname = document.getElementById("getlastname").value;
-    var profileimage = document.getElementById("pimg").files[0];
+// function getdata() {
+//     var firstname = document.getElementById("getname").value;
+//     var lastname = document.getElementById("getlastname").value;
+//     var profileimage = document.getElementById("pimg").files[0];
     
-    var reader = new FileReader();
-    reader.onloadend = function() {
-        var base64data = reader.result;
+//     var reader = new FileReader();
+//     reader.onloadend = function() {
+//         var base64data = reader.result;
         
-        localStorage.setItem('name', JSON.stringify(firstname));
-        localStorage.setItem('newname', JSON.stringify(lastname));
-        localStorage.setItem('profile', JSON.stringify(base64data));
+//         localStorage.setItem('name', JSON.stringify(firstname));
+//         localStorage.setItem('newname', JSON.stringify(lastname));
+//         localStorage.setItem('profile', JSON.stringify(base64data));
 
-        console.log("Data saved.");
-    }
+//         console.log("Data saved.");
+//     }
     
-    if (profileimage) {
-        reader.readAsDataURL(profileimage);
-    } else {
-        console.log("No image selected.");
-    }
-}
+//     if (profileimage) {
+//         reader.readAsDataURL(profileimage);
+//     } else {
+//         console.log("No image selected.");
+//     }
+// }
 
-var profilename = document.getElementById("first");
-var secondname = document.getElementById("second");
-var finalimg = document.getElementById("proimg");
-var main = document.getElementById("di");
-function see() {
-    const firstname = JSON.parse(localStorage.getItem("name"));
-    console.log(firstname);
+// var profilename = document.getElementById("first");
+// var secondname = document.getElementById("second");
+// var finalimg = document.getElementById("proimg");
+// var main = document.getElementById("di");
+// function see() {
+//     const firstname = JSON.parse(localStorage.getItem("name"));
+//     console.log(firstname);
     
-    const lastname = JSON.parse(localStorage.getItem("newname"));
+//     const lastname = JSON.parse(localStorage.getItem("newname"));
   
-    const img = JSON.parse(localStorage.getItem("profile"));
-    main.innerHTML += `<ul><li>${firstname}</li><li id="second">${lastname}</li><li style="height: 40px;width: 40px;">
-              <img src=${img} alt="" id="proimg" style="height: 100%;width: 100%; onclick="see()">
-            </li></ul>`
-    console.log(profilename.innerHTML);
-    console.log(secondname.innerHTML);
-    console.log(finalimg.src);
-}
-see()
+//     const img = JSON.parse(localStorage.getItem("profile"));
+//     main.innerHTML += `<ul><li>${firstname}</li><li id="second">${lastname}</li><li style="height: 40px;width: 40px;">
+//               <img src=${img} alt="" id="proimg" style="height: 100%;width: 100%; onclick="see()">
+//             </li></ul>`
+//     console.log(profilename.innerHTML);
+//     console.log(secondname.innerHTML);
+//     console.log(finalimg.src);
+// }
+// see()
+
