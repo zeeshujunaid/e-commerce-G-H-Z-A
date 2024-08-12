@@ -686,7 +686,11 @@ nav input {
   transition-delay: 0s;
   z-index: 1;
 }
-
+.card:hover .container-image {
+  opacity: 0;
+  border-radius: 8px;
+  transition-delay: 0s, 0.6s;
+}
 .card:hover .content {
   width: 290px;
   height: 190px;
@@ -1252,7 +1256,6 @@ nav input {
   }
   .image-slider-title{
    padding-left: 10vw;
-   display: inline;
   }
   /*                     trending scrooling image  end         */
   /* trendin heading + round card div code start    */
@@ -1268,11 +1271,11 @@ nav input {
     padding-bottom: 1vh;
   }
   .card {
-    background-color: red;
+    /* background-color: red !important;  */
     position: relative;
     background: transparent;
-    width: 20vw;
-    height: 400px !important;
+    width: 300px !important;
+    height: 500px !important;
   }
   
 .card:hover {
@@ -1281,6 +1284,19 @@ nav input {
   justify-content: center;
   height: 200px !important;
   background-color: yellow;
+}
+.card:hover .container-image {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  transition-delay: 0s, 0.6s;
+}
+.card:hover .content {
+  width:100%;
+  height: 50px;
+  visibility: visible;
+  transition-delay: 0.5s;
 }
   /* trendin heading + round card div code end    */
   .adds-code {
