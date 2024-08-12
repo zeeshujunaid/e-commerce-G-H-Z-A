@@ -1266,18 +1266,14 @@ nav input {
     width: 100%;
     padding-bottom: 1vh;
   }
-  .round-card-res-main-div{
-    display: flex;
-    flex-direction: column;
-    height: 80vh;
-    width: 100%;
+  .card {
+    background-color: red;
+    position: relative;
+    background: transparent;
+    width: 20vw;
+    height: 400px !important;
   }
-  .round-card-row-div-first{
-  display: flex;flex-direction: row;height: 100%;width: 100%;background-color: blue;align-items: center;justify-content: space-around;
-  }
-.round-card-row-div-second{
-  display: flex;flex-direction: row;height: 100%;width: 100%;background-color: red;;align-items: center;justify-content: space-around;
-}
+  
 .card:hover {
   width: 200px;
   align-items: center;
