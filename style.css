@@ -1256,10 +1256,10 @@ justify-content: space-around;
 align-items: center;
 }
 .div-for-2-card{
-  display: flex;flex-direction: row;height: 100%;width: 50%;justify-content: space-around;justify-content: center;align-items: center;
+  display: flex;flex-direction: row;height: 100%;width: 50%;justify-content: space-around !important;
 }
 .div-card{
-  display: flex;flex-direction: column;justify-content: center;align-items: center;height: 20vh;align-items: center;justify-content: center;
+  display: flex;flex-direction: column;justify-content: center;align-items: center;height: 20vh;justify-content: center;
 }
 .div-card img{
 height: 40%;width: 80%;
