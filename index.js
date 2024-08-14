@@ -21,9 +21,6 @@ const imageSources = [
      "https://media.chl.ca/wp-content/uploads/sites/33/2023/12/19135219/Frasca-Website.jpg",
      "https://www.ipsos.com/sites/default/files/styles/max_1300x1300/public/ct/news_and_polls/2023-02/Intro-WTFPlay-960x518.jpg?itok=rpxq9w04",
      "https://t3.ftcdn.net/jpg/02/87/04/00/360_F_287040077_U2ckmhpzeyqDHiybj0dfCfX6NRCEKdoe.jpg",
-    // "https://www.sportinglife.com/images/news/945x532/37ffcf37-2e63-4bb9-9881-9430be4e87c9.jpg",
-    // "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9FWnq3IKZXRl4YorfNvLKZckmPn6l432VVgWpgvSV6qAbX9GbXJeeOOTaPf97R0eiOW8&usqp=CAU",
-    // "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ddzGGgqP5A77NI2Wm4FskhqyYMnm0Vjmxx05Dy5X40_xDrxT6u_mEhjv9qBtcXgS1CE&usqp=CAU",
 ];
 
 let currentIndexes = Array.from({ length: imageElements.length }, () => Math.floor(Math.random() * imageSources.length));
