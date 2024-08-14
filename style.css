@@ -1550,3 +1550,65 @@ nav input {
     height: 120px;
   }
 }
+/* From Uiverse.io by Yaya12085 */ 
+.form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+}
+
+.title {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input {
+  outline: 0;
+  border: 1px solid rgb(219, 213, 213);
+  padding: 8px 14px;
+  border-radius: 8px;
+  width: 100%;
+  color:white;
+  background-color: #181818;
+  height: 50px;
+}
+
+.form textarea {
+  border-radius: 8px;
+  height: 50px;
+  color:white;
+  width: 100%;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  background-color: #181818;
+  border: 1px solid rgb(219, 213, 213);
+}
+
+.form button {
+  /* align-self: flex-end; */
+  padding: 8px;
+  border: 1px solid rgb(219, 213, 213) !important;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #181818;
+  color: white;
+  cursor: pointer;
+}
+    
