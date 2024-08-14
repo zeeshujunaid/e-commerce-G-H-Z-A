@@ -1070,12 +1070,12 @@
         </div>
       </div>
     </div>
-    <div style="display: flex;flex-direction: column;align-items: center;justify-content: center;height: 100%;width: 100%;">
+    <div class="report-form">
       <div class="title">REPORT ANY PROBLEM</div>
-      <form class="form">
-        <input type="text" placeholder="Your email" class="input">
-        <textarea placeholder="Your message"></textarea>
-         
+      <form class="form" action="https://api.web3forms.com/submit" method="POST" > 
+        <input type="hidden" name="access_key" value="f004e038-56fa-4595-ad76-d4fab3296c42">
+        <input type="email" placeholder="Your email" class="input" name="name" required >
+        <textarea placeholder="Your message" name="meesage" ></textarea>
         <button>Submit</button>
     </form>
     </div>
@@ -1083,7 +1083,7 @@
       <canvas id="picassoCanvas"></canvas>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2024 PicassoTech. All rights reserved.</p>
+      <p>&copy; 2024 zeeshanjunaid. All rights reserved.</p>
     </div>
     <div class="footer-art">
       <canvas id="picassoCanvas"></canvas>
