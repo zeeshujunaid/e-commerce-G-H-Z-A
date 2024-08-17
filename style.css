@@ -795,20 +795,27 @@ nav input {
 /*                                             adds css                                      */
 .adds-code {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 50vh;
-  background-color: black;
+  /* background-color: black; */
   width: 100%;
 }
 
 .adds-code img {
   display: flex;
-  flex-direction: column;
-  height: 50vh;
-  background-color: black;
-  width: 100%;
+  flex-direction: row;
+  /* height: 50vh; */
+  /* background-color: black; */
+  /* width: 100%; */
 }
-
+.marquee-images {
+  width: 100%;
+  white-space: nowrap;
+}
+.marquee-images img {
+  margin-right: 90px; /* Adds space between images */
+  object-fit: contain;
+}
 /*                                         adds css end  */
 /*                                     team card project */
 .team-card-main-div {
