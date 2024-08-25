@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPORTS HUB</title>
+  <link rel="stylesheet" href="sports.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="./pics/realnewlogo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!--                                lader code start                          -->
+  <div id="loader-main-div"></div>
+  <!--                                loader code ends                          -->
+  <!--                              NAVBAR CODE STARTS                          -->
+  <div class="navbar-main-div" id="navbar-main-div">
+    <nav class="">
+      <input type="checkbox" id="check" />
+      <label for="check" class="che">&#9778;</label>
+      <label for="digital"><img src="./pics/DDDD.png" class="img-navbar" /></label>
+      <ul id="ull">
+        <li><a href="#">HOME</a></li>
+        <div class="paste-button">
+          <button class="button">CATEGORIES &nbsp; ▼</button>
+          <div class="dropdown-content">
+            <a id="top" href="./allcategries/basket.ball.html">BASKETBALL</a>
+            <a id="middle" href="./allcategries/cricket.items.html">CRICKET</a>
+            <a id="bottom" href="./allcategries/football.items.html">FOOTBALL</a>
+            <a id="bottom" href="./allcategries/hockey.items.html">HOCKEY</a>
+            <a id="bottom" href="./allcategries/tennis.items.html">TENNIS</a>
+            <a id="bottom" href="./allcategries/sports.shoes.html">SHOES</a>
+          </div>
+        </div>
+
+        <li>POST ADD</li>
+        <li>SEE YOUR ADD</li>
+        <li>CART</li>
+        <!-- <li><div  id="di">
+          <h1 onclick="see()">profile</h1>
+        </div></li> -->
+      </ul>
+    </nav>
+  </div>
+  <!--                               navbar code ends                          -->
+
+  <!--                          Image Gallery Code Starts                       -->
+  <div class="right-side-img-div">
+    <img src="./pics/imagegallerymainimg.webp" alt="Main Photo" />
+    <div class="image-overlay">
+      <div class="typewriter">
+        <h1>WELCOME TO SPORT HUB..</h1>
+      </div>
+    </div>
+  </div>
+  <!--                          IMAGE GALLERY CODE ENDS                         -->
+
+  <!--                           divs after image code start                      -->
+  <div class="main-div-for-profile-area">
+    <div class="div-for-2-card">
+      <div class="div-card" data-aos="fade-up">
+        <img src="https://vistamax.com/wp-content/uploads/2018/09/vistamax_091718-400x269.jpg" />
+      </div>
+      <div class="div-card" data-aos="fade-down">
+        <div class="div-card" data-aos="fade-down">
+          <img id="displayImage" alt="Profile Picture" style="max-width: 200px;" onclick="toggleInfo()">
+          <ul id="info" style="display: none;">
+            <h2 id="displayName"></h2>
+            <p id="displayEmail"></p>
+            <p id="displayCity"></p>
+          </ul>
+        </div>
+      </div>
+      <div class="div-card" data-aos="fade-down">
+        <img src="./pics/postadd.png" />
+      </div>
+    </div>
+  </div>
+  <!--                           divs after image code ends                        -->
+  <!--                        TRENDING ITEMS SLIDER CODE                        -->
+  <div class="trending-slider-main-cointainer">
+    <div class="trending-slider-row-div">
+      <section class="image-slider-container">
+        <div class="image-slider-heading">
+          <h2 class="image-slider-title">ALL CATEGORIES</h2>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide-con">
+                <img
+                  src="https://www.mrfsports.com/sites/default/files/styles/homepage_bat_listing/public/kasmir-willow-listing_0.png?itok=LyLUYcuD"
+                  alt="" />
+                <div class="slide-details">
+                  <div class="movie-info">
+                    <h2 class="movie-name" title="">CRICKET ITEMS</h2>
+                  </div>
+                  <div class="movie-btns">
+                    <a href="./allcategries/cricket.items.html" class="imdb-rate" title="">
+                      SEE MORE
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-con">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJOYQ1vp0G2uJ0ka9mS0Ty886DX5S1JvJjBp8q7Q-1Fre78L8ZgdBn6rudUrpn1Bxjb50&usqp=CAU"
+                  alt="" />
+                <div class="slide-details">
+                  <div class="movie-info">
+                    <h2 class="movie-name" title="">BASKET BALL</h2>
+                  </div>
+                  <div class="movie-btns">
+                    <a href="./allcategries/basket.ball.html" class="imdb-rate" title="">
+                      SEE MORE
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-con">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX1l5xtInx_hILCq1qsn30LVVghutiNf-0tCRnv9L5X4dM4jgK21w6d-UTAzOjQmKSC0s&usqp=CAU"
+                  alt="" />
+                <div class="slide-details">
+                  <div class="movie-info">
+                    <h2 class="movie-name" title="">TENNIS ITEMS</h2>
+                  </div>
+                  <div class="movie-btns">
+                    <a href="./allcategries/tennis.items.html" class="imdb-rate" title="">
+                      SEE MORE
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-con">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9ew-0ypyxbLTUdPPsPSiMgn_jUp05fjc_bw&s"
+                  alt="" />
+                <div class="slide-details">
+                  <div class="movie-info">
+                    <h2 class="movie-name" title="">HOCKEY STICKS</h2>
+                  </div>
+                  <div class="movie-btns">
+                    <a href="./allcategries/hockey.items.html" class="imdb-rate" title="">
+                      SEE MORE
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-con">
+                <img src="./pics/shoespics/shoespic2.jfif" alt="" />
+                <div class="slide-details">
+                  <div class="movie-info">
+                    <h2 class="movie-name" title="">GENTS SHOES</h2>
+                  </div>
+                  <div class="movie-btns">
+                    <a href="./allcategries/sports.shoes.html" class="imdb-rate" title="">
+                      SEE MORE
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-con">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7oc5vSEKg5uFANGCqz1XhchC0_vdBo6XegA&s"
+                  alt="" />
+                <div class="slide-details">
+                  <div class="movie-info">
+                    <h2 class="movie-name" title="">WOMENS SHOES</h2>
+                  </div>
+                  <div class="movie-btns">
+                    <a href="./allcategries/sports.shoes.html" class="imdb-rate" title="">
+                      SEE MORE
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-con">
+                <img
+                  src="https://static.vecteezy.com/system/resources/thumbnails/025/525/873/small_2x/abstract-basketball-panoramic-background-orange-basketball-ai-generated-image-photo.jpg"
+                  alt="" />
+                <div class="slide-details">
+                  <div class="movie-info">
+                    <h2 class="movie-name" title="">BASKET BALLS</h2>
+                  </div>
+                  <div class="movie-btns">
+                    <a href="./allcategries/basket.ball.html" class="imdb-rate" title="">
+                      SEE MORE
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-con">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZYNZ5364Wle2nrqGNuoLE4LVCnDynsZfOMQ&s"
+                  alt="" />
+                <div class="slide-details">
+                  <div class="movie-info">
+                    <h2 class="movie-name" title="">WOMEN SHOES</h2>
+                  </div>
+                  <div class="movie-btns">
+                    <a href="./allcategries/sports.shoes.html" class="imdb-rate" title="">
+                      SEE MORE
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-con">
+                <img src="https://wallpapers.com/images/featured/football-fc6ou33pmae5hruc.jpg" alt="" />
+                <div class="slide-details">
+                  <div class="movie-info">
+                    <h2 class="movie-name" title="">FOOT BALLS</h2>
+                  </div>
+                  <div class="movie-btns">
+                    <a href="./allcategries/football.items.html" class="imdb-rate" title="">
+                      SEE MORE
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!--                     TRENDING ITEMS SLIDER CODE ENDS                      -->
+
+  <!--                       trending item heading CODE START                        -->
+  <div class="treinding-item-heading">
+    <h1>TRENDING ITEMS</h1>
+  </div>
+  <!--                             trending item heading line end                         -->
+
+  <!--                             1round card line start                         -->
+  <div class="round-card-main-cointainer">
+    <div class="round-card-heading-div">
+      <h4>CRICKET</h4>
+      <h6><a href="./allcategries/cricket.items.html">SEE MORE</a></h6>
+    </div>
+    <div class="round-card-row-div">
+      <div class="card">
+        <div class="container-image">
+          <img src="https://www.kilbirniesports.co.nz/cdn/shop/products/IMG_6198_1200x1200.png?v=1661233402"
+            style="height: 100%; width: 100%; object-fit: contain" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>GRAY NICOLLAS <br />
+              FALCON 1600</span>
+            <p>$500</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img
+                src="https://www.kilbirniesports.co.nz/cdn/shop/products/IMG_6186_b98ca917-d218-486d-8f85-3e01c06887c6_1024x1024@2x.png?v=1661233374"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="card">
+        <div class="container-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB6gyIZu4uyfkMXTRAdHOdz68pD3CamqeuDQ&s"
+            style="height: 100%; width: 100%" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>MRF <br />
+              GENIUS PADS</span>
+            <p>$300</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlyszCl7ZjAxigmFJEIpQOEXGrfsqfwInd2RJFOyNgrURU39R14tVthsc4PdduTlYRcog&usqp=CAU"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="card">
+        <div class="container-image">
+          <img src="https://i0.wp.com/kaboomsport.com/wp-content/uploads/2022/07/Black-Grey1.webp?fit=600%2C600&ssl=1"
+            style="height: 100%; width: 100%" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>SG<br />
+              DUFFLE eco/combo</span>
+            <p>$3999</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNkZpvEysHv-rzLPaDTdPhmnA4S5KSpb075Q&s"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="card">
+        <div class="container-image">
+          <img src="https://wallpapers.com/images/hd/kookaburra-cricket-bat-profile-bso2fpn174xqrblt.jpg"
+            style="height: 100%; width: 100%; object-fit: contain" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>KOKOBURA <br />
+              SPECIALEDITION</span>
+            <p>$199</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Tppug-WhKcalyugndJqJzlhuMCmn6jLU40pWREAgjOCVYepi0WYEH1SpfcU6LNkdfHs&usqp=CAU"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--                             1round card line end                         -->
+
+  <!--                             2round card line start                         -->
+  <div class="round-card-main-cointainer">
+    <div class="round-card-heading-div">
+      <h4>FOOTBALL</h4>
+      <h6><a href="./allcategries/football.items.html">SEE MORE</a></h6>
+    </div>
+    <div class="round-card-row-div">
+      <div class="card">
+        <div class="container-image">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFLZ_NtaivtqG5TRYLnZk8mH4mYXWGygRTB5NaE_eS9rpRmkev_lEWbzu5Vfj5N-Ilfno&usqp=CAU"
+            style="height: 100%; width: 100%; object-fit: contain" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>MESSI <br />
+              WINNING JERSEY</span>
+            <p>$99</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img
+                src="https://static.wixstatic.com/media/d6ca95_729c43c77cb44f6aa78870449336bd61~mv2.png/v1/fill/w_560,h_560,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/d6ca95_729c43c77cb44f6aa78870449336bd61~mv2.png"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="card">
+        <div class="container-image">
+          <img src="https://i.dawn.com/primary/2014/06/53a2d4c0981e4.gif"
+            style="height: 100%; width: 100%; object-fit: contain" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>PAKISTAN <br />
+              BRAZUCA FOOTBALL</span>
+            <p>$149</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img
+                src="https://3.bp.blogspot.com/-dSkyQvvSo2A/U4CDv-cv6SI/AAAAAAAAHIU/CN3xjazzT-g/s1600/Pakistani+Footballs+in+Fifa+World+Cup.jpg"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="card">
+        <div class="container-image">
+          <img
+            src="https://store.fifa.com/_next/image?url=https%3A%2F%2Flegends.broadleafcloud.com%2Fapi%2Fasset%2Fcontent%2FFIFACL010600_A.jpg%3FcontextRequest%3D%257B%2522forceCatalogForFetch%2522%3Afalse%2C%2522forceFilterByCatalogIncludeInheritance%2522%3Afalse%2C%2522forceFilterByCatalogExcludeInheritance%2522%3Afalse%2C%2522applicationId%2522%3A%252201GPYEXET5B7Y61HW8TB4R0YWE%2522%2C%2522tenantId%2522%3A%2522FIFA%2522%257D&w=384&q=50"
+            style="height: 100%; width: 100%; border-radius: 50%" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>ARGENTINA <br />
+              REPLICA TROPHY</span>
+            <p>$699</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img
+                src="https://store.fifa.com/_next/image?url=https%3A%2F%2Flegends.broadleafcloud.com%2Fapi%2Fasset%2Fcontent%2FFIFACL010600_A.jpg%3FcontextRequest%3D%257B%2522forceCatalogForFetch%2522%3Afalse%2C%2522forceFilterByCatalogIncludeInheritance%2522%3Afalse%2C%2522forceFilterByCatalogExcludeInheritance%2522%3Afalse%2C%2522applicationId%2522%3A%252201GPYEXET5B7Y61HW8TB4R0YWE%2522%2C%2522tenantId%2522%3A%2522FIFA%2522%257D&w=3840&q=85"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="card">
+        <div class="container-image">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Zetr0E9-vKSoEayiZLbMpaTYDWvBr2u-a4RF4jDPSUajx2LGehqfCZF9LBPfnn5cOAk&usqp=CAU"
+            style="height: 100%; width: 100%; object-fit: contain" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>RONALDO <br />
+              PORTUGAL KIT</span>
+            <p>$20</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img src="https://soccerplanettx.com/cdn/shop/files/Foto-22-Portugal-Home-Ronaldo.png?v=1696296411"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--                             2round card line end                         -->
+
+  <!--                             3round card line start                         -->
+  <!-- <div class="round-card-main-cointainer">
+    <div class="round-card-heading-div">
+      <h4>shoes</h4>
+      <h6>SEE MORE</h6>
+    </div>
+    <div class="round-card-row-div">
+      <div class="card">
+        <div class="container-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfsKcLtcDvagrqCxPXwH7LG9Nddg1K83l6tQ&s"
+            style="height: 100%; width: 100%; object-fit: contain" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>Lorem <br />
+              Ipsum dolor.</span>
+            <p>$199</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 2
+      <div class="card">
+        <div class="container-image">
+          <img src="https://t4.ftcdn.net/jpg/05/06/36/71/360_F_506367145_aTN8tLqtKXDYxzHQs5DH4HGsbVT9OgMn.jpg"
+            style="height: 100%; width: 100%; object-fit: contain" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>Lorem <br />
+              Ipsum dolor.</span>
+            <p>$199</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqKAwygTsmihhHD2uJXO2UUfZculJyYbWPojlh692AS2zTYtMuxyugZV0SCa7fOzIGuVQ&usqp=CAU"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3 
+      <div class="card">
+        <div class="container-image">
+          <img src="https://www.pngitem.com/pimgs/m/10-109181_nike-shoes-png-hd-transparent-png.png"
+            style="height: 100%; width: 100%; border-radius: 50%" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>Lorem <br />
+              Ipsum dolor.</span>
+            <p>$199</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNCQ_9hAusncD-MLNn6eL-nqRmUTUHHar7icRa0pLX3naCjln7nYd888LiC21yWjCv7a8&usqp=CAU"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 4 
+      <div class="card">
+        <div class="container-image">
+          <img
+            src="https://www.hdwallpapers.in/download/black_white_nike_shoe_in_black_white_background_hd_nike-1366x768.jpg"
+            style="height: 100%; width: 100%; object-fit: contain" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>Lorem <br />
+              Ipsum dolor.</span>
+            <p>$199</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHm6PielN3UKV_UrSjzR9EjF8DynfOR6S-D0cNJat-NKYqr7XHxGzyGHiNQkJVrbJcOGo&usqp=CAU"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!--                             3round card line end                         -->
+  <!--                               adds code start                             -->
+  <div class="adds-code"></div>
+  <!--                               adds code end                               -->
+  <!--                             4round card line start                         -->
+  <div class="round-card-main-cointainer">
+    <div class="round-card-heading-div">
+      <h4>HOCKEY</h4>
+      <h6><a href="./allcategries/hockey.items.html">SEE MORE</a> </h6>
+    </div>
+    <div class="round-card-row-div">
+      <div class="card">
+        <div class="container-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYeC3zlDcuiWH-B_qGqPEF2gWQYC23aHv_0g&s"
+            style="height: 100%; width: 100%; object-fit: contain" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>Lorem <br />
+              Ipsum dolor.</span>
+            <p>$199</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcka02lTckbIEgvXyGjMjsrHbzz_FDgkJJLUd9cNsyldTdRKHxdc9SPQSDHL2cpd3OqCU&usqp=CAU"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="card">
+        <div class="container-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbq3uJBiLFiuvWXcb8MmuDxNKdRo6iXEsEJQ&s"
+            style="height: 100%; width: 100%; object-fit: contain" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>Lorem <br />
+              Ipsum dolor.</span>
+            <p>$199</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img
+                src="https://www.hockeymonkey.ca/media/catalog/product/cache/a848536da192a0c5bb969d0898e6ec13/c/c/ccm-ex-as5-sr.jpg"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="card">
+        <div class="container-image">
+          <img
+            src="https://media-www.canadiantire.ca/product/playing/hockey/hockey-equipment/0839068/sher-wood-premium-youth-protective-kit-small-b1b3d167-d8fa-47c4-b341-d6904ebfe536-jpgrendition.jpg"
+            style="height: 100%; width: 100%; border-radius: 50%" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>Lorem <br />
+              Ipsum dolor.</span>
+            <p>$199</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvAnYlWSSMoKdz9zKm8DGk7j6LXFs0XW6aOBqFQE741PaahB2WqfoJjxm7cRj9vY8LJgE&usqp=CAU"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="card">
+        <div class="container-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNGn5BP58ze2lwOjWSn7odUewaC6HQgRrmhw&s"
+            style="height: 100%; width: 100%; object-fit: contain" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>Lorem <br />
+              Ipsum dolor.</span>
+            <p>$199</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaexV0vS57V8NJLuQfYe3OESQcjHQqN-oFoqZgX8zkwCbC_5uXE21QSsS3X4RKCITFlsU&usqp=CAU"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--                             4round card line end                         -->
+  <!--                             5round card line start                         -->
+  <div class="round-card-main-cointainer">
+    <div class="round-card-heading-div">
+      <h4>shoes</h4>
+      <h6>SEE MORE</h6>
+    </div>
+    <div class="round-card-row-div">
+      <div class="card">
+        <div class="container-image">
+          <img
+            src="https://rukminim2.flixcart.com/image/850/1000/krce64w0/bat/r/9/g/1-1-2-virat-kohli-grand-edition-tennis-cricket-bat-short-handle-original-imag55zexgqmtznz.jpeg?q=20&crop=false"
+            style="height: 100%; width: 100%; object-fit: contain" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>Lorem <br />
+              Ipsum dolor.</span>
+            <p>$199</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img
+                src="https://rukminim2.flixcart.com/image/850/1000/krce64w0/bat/r/9/g/1-1-2-virat-kohli-grand-edition-tennis-cricket-bat-short-handle-original-imag55zexgqmtznz.jpeg?q=20&crop=false"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="card">
+        <div class="container-image">
+          <img
+            src="https://rukminim2.flixcart.com/image/850/1000/krce64w0/bat/r/9/g/1-1-2-virat-kohli-grand-edition-tennis-cricket-bat-short-handle-original-imag55zexgqmtznz.jpeg?q=20&crop=false"
+            style="height: 100%; width: 100%; object-fit: contain" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>Lorem <br />
+              Ipsum dolor.</span>
+            <p>$199</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img
+                src="https://rukminim2.flixcart.com/image/850/1000/krce64w0/bat/r/9/g/1-1-2-virat-kohli-grand-edition-tennis-cricket-bat-short-handle-original-imag55zexgqmtznz.jpeg?q=20&crop=false"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="card">
+        <div class="container-image">
+          <img src="https://sportsghar.com/wp-content/uploads/2020/08/Best-CA-Somo-Cricket-Bats.jpg"
+            style="height: 100%; width: 100%; border-radius: 50%" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>Lorem <br />
+              Ipsum dolor.</span>
+            <p>$199</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img src="https://sportsghar.com/wp-content/uploads/2020/08/Best-CA-Somo-Cricket-Bats.jpg"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="card">
+        <div class="container-image">
+          <img
+            src="https://rukminim2.flixcart.com/image/850/1000/krce64w0/bat/r/9/g/1-1-2-virat-kohli-grand-edition-tennis-cricket-bat-short-handle-original-imag55zexgqmtznz.jpeg?q=20&crop=false"
+            style="height: 100%; width: 100%; object-fit: contain" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>Lorem <br />
+              Ipsum dolor.</span>
+            <p>$199</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img
+                src="https://rukminim2.flixcart.com/image/850/1000/krce64w0/bat/r/9/g/1-1-2-virat-kohli-grand-edition-tennis-cricket-bat-short-handle-original-imag55zexgqmtznz.jpeg?q=20&crop=false"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--                             5round card line end                         -->
+  <!--                             6round card line start                         -->
+  <div class="round-card-main-cointainer">
+    <div class="round-card-heading-div">
+      <h4>shoes</h4>
+      <h6>SEE MORE</h6>
+    </div>
+    <div class="round-card-row-div">
+      <div class="card">
+        <div class="container-image">
+          <img
+            src="https://rukminim2.flixcart.com/image/850/1000/krce64w0/bat/r/9/g/1-1-2-virat-kohli-grand-edition-tennis-cricket-bat-short-handle-original-imag55zexgqmtznz.jpeg?q=20&crop=false"
+            style="height: 100%; width: 100%; object-fit: contain" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>Lorem <br />
+              Ipsum dolor.</span>
+            <p>$199</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img
+                src="https://rukminim2.flixcart.com/image/850/1000/krce64w0/bat/r/9/g/1-1-2-virat-kohli-grand-edition-tennis-cricket-bat-short-handle-original-imag55zexgqmtznz.jpeg?q=20&crop=false"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="card">
+        <div class="container-image">
+          <img
+            src="https://rukminim2.flixcart.com/image/850/1000/krce64w0/bat/r/9/g/1-1-2-virat-kohli-grand-edition-tennis-cricket-bat-short-handle-original-imag55zexgqmtznz.jpeg?q=20&crop=false"
+            style="height: 100%; width: 100%; object-fit: contain" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>Lorem <br />
+              Ipsum dolor.</span>
+            <p>$199</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img
+                src="https://rukminim2.flixcart.com/image/850/1000/krce64w0/bat/r/9/g/1-1-2-virat-kohli-grand-edition-tennis-cricket-bat-short-handle-original-imag55zexgqmtznz.jpeg?q=20&crop=false"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="card">
+        <div class="container-image">
+          <img src="https://sportsghar.com/wp-content/uploads/2020/08/Best-CA-Somo-Cricket-Bats.jpg"
+            style="height: 100%; width: 100%; border-radius: 50%" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>Lorem <br />
+              Ipsum dolor.</span>
+            <p>$199</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img src="https://sportsghar.com/wp-content/uploads/2020/08/Best-CA-Somo-Cricket-Bats.jpg"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="card">
+        <div class="container-image">
+          <img
+            src="https://rukminim2.flixcart.com/image/850/1000/krce64w0/bat/r/9/g/1-1-2-virat-kohli-grand-edition-tennis-cricket-bat-short-handle-original-imag55zexgqmtznz.jpeg?q=20&crop=false"
+            style="height: 100%; width: 100%; object-fit: contain" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <span>Lorem <br />
+              Ipsum dolor.</span>
+            <p>$199</p>
+            <button>Buy</button>
+          </div>
+          <div class="product-image">
+            <div class="box-image">
+              <img
+                src="https://rukminim2.flixcart.com/image/850/1000/krce64w0/bat/r/9/g/1-1-2-virat-kohli-grand-edition-tennis-cricket-bat-short-handle-original-imag55zexgqmtznz.jpeg?q=20&crop=false"
+                style="height: 100%; width: 100%; object-fit: contain" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--                             6round card line end                         -->
+  <!--                        TEAM CARD PROJECT START                         -->
+  <div class="team-card-main-div" id="team-project-div">
+    <h1>OUR PROJECT TEAM</h1>
+    <div class="main-div-for-res">
+      <div class="row-first-div-for-res">
+        <div class="card-Container-div">
+          <div class="profileDiv">
+            <img src="./pics/zzz.png" style="height: 100%; width: 100%" />
+          </div>
+          <div class="infoDiv">
+            <div class="nameDiv">
+              <p class="name">
+                <a href="https://zeeshanjunaidportfolio.netlify.app/"
+                  style="text-decoration: none; color: black">ZEESHAN JUNAID</a>
+              </p>
+              <p class="role">FULL STACK DEVELOPER</p>
+            </div>
+            <div class="socialDiv">
+              <a href="https://github.com/zeeshujunaid"><svg viewBox="0 0 496 512" class="socials github">
+                  <path
+                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                  </path>
+                </svg></a>
+
+              <a href="#linkdin"><svg viewBox="0 0 448 512" class="socials linkdin">
+                  < <path
+                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                    </path>
+                    >
+                </svg></a>
+
+              <a href="#insta"><svg class="socials instagram" viewBox="0 0 448 512">
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                  </path>
+                </svg></a>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="card-Container-div">
+          <div class="profileDiv">
+            <img src="./pics/ghouri.png" style="height: 100%; width: 100%" />
+          </div>
+          <div class="infoDiv">
+            <div class="nameDiv">
+              <p class="name">FARZAIN KHAN</p>
+              <p class="role">FULL STACK DEVELOPER</p>
+            </div>
+            <div class="socialDiv">
+              <a href="https://github.com/zeeshujunaid"><svg viewBox="0 0 496 512" class="socials github">
+                  <path
+                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                  </path>
+                </svg></a>
+
+              <a href="#linkdin"><svg viewBox="0 0 448 512" class="socials linkdin">
+                  < <path
+                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                    </path>
+                    >
+                </svg></a>
+
+              <a href="#insta"><svg class="socials instagram" viewBox="0 0 448 512">
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                  </path>
+                </svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row-second-div-for-res">
+        <!--3  -->
+        <div class="card-Container-div">
+          <div class="profileDiv">
+            <img src="./pics/aarijreal.png" style="height: 100%; width: 100%" />
+          </div>
+          <div class="infoDiv">
+            <div class="nameDiv">
+              <p class="name">AARIJ KHAN</p>
+              <p class="role">FULL STACK DEVELOPER</p>
+            </div>
+            <div class="socialDiv">
+              <a href="https://github.com/zeeshujunaid"><svg viewBox="0 0 496 512" class="socials github">
+                  <path
+                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                  </path>
+                </svg></a>
+
+              <a href="#linkdin"><svg viewBox="0 0 448 512" class="socials linkdin">
+                  < <path
+                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                    </path>
+                    >
+                </svg></a>
+
+              <a href="#insta"><svg class="socials instagram" viewBox="0 0 448 512">
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                  </path>
+                </svg></a>
+            </div>
+          </div>
+        </div>
+        <!--  4-->
+        <div class="card-Container-div">
+          <div class="profileDiv">
+            <img src="./pics/hassan.png" style="height: 100%; width: 100%" />
+          </div>
+          <div class="infoDiv">
+            <div class="nameDiv">
+              <p class="name">HASSA SIDIQUI</p>
+              <p class="role">FULL STACK DEVELOPER</p>
+            </div>
+            <div class="socialDiv">
+              <a href="https://github.com/zeeshujunaid"><svg viewBox="0 0 496 512" class="socials github">
+                  <path
+                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                  </path>
+                </svg></a>
+
+              <a href="#linkdin"><svg viewBox="0 0 448 512" class="socials linkdin">
+                  < <path
+                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                    </path>
+                    >
+                </svg></a>
+
+              <a href="#insta"><svg class="socials instagram" viewBox="0 0 448 512">
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                  </path>
+                </svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--                        TEAM CARD PROJECT ENDS                         -->
+
+  <!--                          fotter code start                            -->
+  <footer id="picassoFooter">
+    <div class="footer-content">
+      <div class="footer-section footer-logo">
+        <img src="./pics/DDDD.png" style="height: 100%; width: 100%" />
+        <h2>PicassoTech</h2>
+        <p>THE STORE FOR SORTS LOVER.</p>
+      </div>
+      <div class="footer-section footer-navigation">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="./index.html" class="hover-effect">Home</a></li>
+          <li><a href="#" class="hover-effect">About Us</a></li>
+          <li>
+            <a href="#navbar-main-div" class="hover-effect">Services</a>
+          </li>
+          <li>
+            <a href="#team-project-div" class="hover-effect">Portfolio</a>
+          </li>
+          <li>
+            <a href="#team-project-div" class="hover-effect">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-section footer-contact">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-envelope"></i> hzservice2@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +1 (000) 111-0000</p>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> Lorem ipsum dolor sit amet.
+          12345
+        </p>
+      </div>
+      <div class="footer-section footer-cta">
+        <h3>Stay Connected</h3>
+        <div class="social-icons">
+          <a href="#" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/768px-Facebook_Logo_2023.png"
+                style="
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                    border-radius: 40%;
+                  " /></i></a>
+          <a href="#" target="_blank" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+                style="
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                    border-radius: 40%;
+                  " /></i></a>
+          <a href="#" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" style="
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                    border-radius: 40%;
+                  " /></i></a>
+          <a href="#" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7FQwIxxp6GVoC-dGyuEpzVwNezeDUk29vuw&s"
+                style="
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                    border-radius: 40%;
+                  " /></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="report-form">
+      <div class="title">REPORT ANY PROBLEM</div>
+      <form class="form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="f004e038-56fa-4595-ad76-d4fab3296c42">
+        <input type="name" placeholder="Your name" class="input" name="name" required>
+        <input type="email" placeholder="Your email" class="input" name="email" required>
+        <textarea placeholder="Your message" name="meesage" required></textarea>
+        <button>Submit</button>
+      </form>
+    </div>
+    <div class="footer-art">
+      <canvas id="picassoCanvas"></canvas>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 zeeshanjunaid. All rights reserved.</p>
+    </div>
+    <div class="footer-art">
+      <canvas id="picassoCanvas"></canvas>
+  </footer>
+  <!--                           footer CODE ENDS                             -->
+
+  <!--                             SCRIPT TAGS                                  -->
+  <script src="index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper(".swiper", {
+      loop: true,
+      effect: "coverflow",
+      centeredSlides: true,
+      slidesPerView: "auto",
+      speed: 500,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+      breakpoints: {
+        768: {
+          centeredSlides: false,
+          coverflowEffect: {
+            depth: 0,
+
+            rotate: 0,
+
+            stretch: -10,
+          },
+        },
+      },
+      autoplay: {
+        delay: 3000,
+      },
+      coverflowEffect: {
+        depth: 80,
+        rotate: 50,
+        stretch: 20,
+      },
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!--                                SCRIPT TAG END                      -->
+</body>
+
+</html>

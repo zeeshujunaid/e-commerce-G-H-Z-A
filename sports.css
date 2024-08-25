@@ -315,7 +315,7 @@ nav input {
   display: flex;
   flex-direction: row;
   height: 100%;
-  width: 50%;
+  width: 100%;
   justify-content: space-around;
 }
 
@@ -325,11 +325,23 @@ nav input {
   justify-content: center;
   align-items: center;
   height: 30vh;
+  /* background-color: beige; */
+}
+#displayImage{
+  align-items: center;
+  object-fit: contain;
+  border-radius: 50%;
+  height: 80%;
+  width: 100%
 }
 
 .div-card img {
-  height: 80%;
-  width: 100%;
+ height: 80%;
+ width: 100%;
+ object-fit: contain;
+  background-color:beige;
+  border-radius: 50%;
+
 }
 
 /*                  after images profile and all area codes end      */
@@ -793,28 +805,67 @@ nav input {
 }
 
 /*                                             adds css                                      */
-.adds-code {
+.add-code-main-div{
+  height:70vh;padding-top: 8px;
+  /* background-color: #181818; */
+}
+.marquee {
+  margin: 0em 10px;
+}
+.marquee-box-one {
+  overflow: hidden;
+  position: relative;
   display: flex;
-  flex-direction: row;
-  height: 50vh;
-  /* background-color: black; */
-  width: 100%;
+  align-items: center;
+  margin: 3em 0 0 0;
+}
+.marquee-content-one {
+  display: flex;
+  gap: 40px;
+  padding: 0 20px;
+  animation: scroll-one 30s linear infinite;
+}
+.marquee-box-two {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 3em 0 6em 0;
+}
+.marquee-content-two {
+  display: flex;
+  gap: 40px;
+  padding: 0 20px;
+  animation: scroll-two 30s linear infinite;
+}
+.marquee-text {
+  white-space: nowrap;
+  /* text-transform: uppercase; */
+  font-size: 35px;
+  font-weight: 100;
+  flex-shrink: 0;
+  margin: 0;
+  /* padding: 15px 30px; */
+  height:20vh;
+  border-radius: 50px;
+  color: white;
+  /* border: 1px solid grey; */
+  display: flex;
+  align-items: center !important;
+  justify-content: center;
+  user-select: none;
+}
+.marquee-text img{
+  height: 100%;width: 100%;object-fit: contain;
 }
 
-.adds-code img {
-  display: flex;
-  flex-direction: row;
-  /* height: 50vh; */
-  /* background-color: black; */
-  /* width: 100%; */
+@keyframes scroll-one {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
 }
-.marquee-images {
-  width: 100%;
-  white-space: nowrap;
-}
-.marquee-images img {
-  margin-right: 90px; /* Adds space between images */
-  object-fit: contain;
+@keyframes scroll-two {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
 }
 /*                                         adds css end  */
 /*                                     team card project */

@@ -223,46 +223,81 @@ var TxtType = function(el, toRotate, period) {
         document.body.appendChild(css);
     };
 // profile code start
-// function getdata() {
-//     var firstname = document.getElementById("getname").value;
-//     var lastname = document.getElementById("getlastname").value;
-//     var profileimage = document.getElementById("pimg").files[0];
-    
-//     var reader = new FileReader();
-//     reader.onloadend = function() {
-//         var base64data = reader.result;
+// Function to save profile data from profile.html
+function saveProfileData(event) {
+    event.preventDefault();
+
+    // Get user details from the form
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const city = document.getElementById('city').value;
+    const image = document.getElementById('image').files[0];
+
+    if (!name || !email || !city || !image) {
+        alert('Please fill out all fields and select an image.');
+        return;
+    }
+
+    // Convert image to base64
+    const reader = new FileReader();
+    reader.onloadend = function() {
+        const imageData = reader.result;
+
+        // Save data to localStorage
+        localStorage.setItem('userName', name);
+        localStorage.setItem('userEmail', email);
+        localStorage.setItem('userCity', city);
+        localStorage.setItem('userImage', imageData);
+
+        alert('Profile saved!');
+
+        // Redirect to user.html after saving
+        window.location.href = 'user.html';
+    };
+
+    reader.readAsDataURL(image);
+}
+
+// Function to update the display on user.html
+function updateDisplay() {
+    const name = localStorage.getItem('userName');
+    const email = localStorage.getItem('userEmail');
+    const city = localStorage.getItem('userCity');
+    const image = localStorage.getItem('userImage');
+
+    if (document.getElementById('displayName')) {
+        document.getElementById('displayName').textContent = name || "Guest";
+        document.getElementById('displayEmail').textContent = email || "No email provided";
+        document.getElementById('displayCity').textContent = city || "No city provided";
         
-//         localStorage.setItem('name', JSON.stringify(firstname));
-//         localStorage.setItem('newname', JSON.stringify(lastname));
-//         localStorage.setItem('profile', JSON.stringify(base64data));
+        if (image) {
+            document.getElementById('displayImage').src = image;
+        } else {
+            document.getElementById('displayImage').alt = "No image available";
+        }
+    }
+}
 
-//         console.log("Data saved.");
-//     }
+// Optional: Toggle user info on image click (for user.html)
+function toggleInfo() {
+    const info = document.getElementById('info');
+    info.style.display = info.style.display === 'none' ? 'block' : 'none';
+}
+
+// Check if we are on profile.html
+if (document.getElementById('userForm')) {
+    document.getElementById('userForm').addEventListener('submit', saveProfileData);
+}
+
+// Check if we are on user.html
+if (document.getElementById('displayName')) {
+    updateDisplay();
+}
+
+
+function profileinfo(){
+    // var info = document.getElementById("info");
+    // info.style.display="flex"
+    console.log("hello");
     
-//     if (profileimage) {
-//         reader.readAsDataURL(profileimage);
-//     } else {
-//         console.log("No image selected.");
-//     }
-// }
-
-// var profilename = document.getElementById("first");
-// var secondname = document.getElementById("second");
-// var finalimg = document.getElementById("proimg");
-// var main = document.getElementById("di");
-// function see() {
-//     const firstname = JSON.parse(localStorage.getItem("name"));
-//     console.log(firstname);
-    
-//     const lastname = JSON.parse(localStorage.getItem("newname"));
-  
-//     const img = JSON.parse(localStorage.getItem("profile"));
-//     main.innerHTML += `<ul><li>${firstname}</li><li id="second">${lastname}</li><li style="height: 40px;width: 40px;">
-//               <img src=${img} alt="" id="proimg" style="height: 100%;width: 100%; onclick="see()">
-//             </li></ul>`
-//     console.log(profilename.innerHTML);
-//     console.log(secondname.innerHTML);
-//     console.log(finalimg.src);
-// }
-// see()
-
+}
