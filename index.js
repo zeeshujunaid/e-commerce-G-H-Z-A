@@ -293,11 +293,3 @@ if (document.getElementById('userForm')) {
 if (document.getElementById('displayName')) {
     updateDisplay();
 }
-
-
-function profileinfo(){
-    // var info = document.getElementById("info");
-    // info.style.display="flex"
-    console.log("hello");
-    
-}
